@@ -1,0 +1,802 @@
+html{
+	font-size:100.01%;
+}
+body,html {
+   margin:0;
+   padding:0;
+   width:100%;
+   height:100%;
+   background:#FFFFFF;
+   font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	font-size: 62.5%;
+}
+image{
+    border:0;
+}
+p, a, span{
+	color: #000000 !important;
+	font-size:1em;
+	margin: 0;
+	padding: 0;
+}
+p{
+	color: #000000;
+	margin-bottom: 1em;
+}
+a{
+	color: #000000;
+	outline: none !important;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul, ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+table{
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+span.big{
+	font-size: 2.4em;
+}
+div.left{
+	float: left;
+	position: relative;
+}
+a.more{
+	font-weight: bold;
+}
+a.back{
+	float: right;
+	clear: both;
+}
+.error{
+	color: red;
+}
+p.center{
+	text-align: center;
+}
+p.title_list{
+	font-weight: bold;
+}
+div.container{
+	float: left;
+	position: relative;
+	width: 100%;
+}
+div.wrap_center{
+	margin: 0 auto;
+	position: relative;
+	width: 70em;
+}
+#header, #navigation{
+	float: left;
+    position: relative;
+    width: 100%;
+	background: #FFFFFF;
+}
+#header{
+	padding-top: 1.2em;
+} 
+#navigation{
+	padding: 3.6em 0 6em;
+}
+#header #logo{
+	padding-left: 2.7em;
+    width: 30%;
+}
+#header #navigation_top{
+	float: right;
+}
+#header #navigation_top .phone {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+#header #navigation_top .ico{
+	height: 1.5em;
+	width: 1.5em;
+}
+
+#header #navigation_top td{
+    white-space: nowrap;
+    width: 12em;
+}
+#header #navigation_top td span{
+    font-size: 1.2em;
+}
+#header #navigation_top img{
+	cursor: pointer;
+	vertical-align: middle;
+}
+#navigation table{
+	width: 100%;
+}
+#navigation table td.secondary_links, #navigation table td.search{
+	width: 19.9em
+}
+#navigation table td.secondary_links a{
+	margin-left: 0.8em;
+}
+#navigation table td.search{
+	width: 0;
+}
+#navigation table td a{
+	font-size: 1.2em;
+}
+#banner_wrap{
+	margin: 0 auto;
+    width: 100em;
+	position: relative;
+	z-index: 52;
+}
+#banner{
+	display: none;
+	height: 13.9m;
+    position: absolute;
+    top: -2.1em;
+    width: 100em;
+    z-index: 10;
+}
+#banner_left, #banner_right,#banner_left_bg, #banner_right_bg{
+	display: none;
+	height: 17.9em;
+    position: absolute;
+    top: -6em;
+    z-index: 1;
+}
+
+.home #banner_left, .home #banner_right, .home #banner_left_bg, .home #banner_right_bg{
+	height: 32.1em;
+}
+#banner_left{
+    left: -9.4em;
+    z-index: 55;
+}
+#banner_right{
+    right: -9.4em;
+    z-index: 55;
+}
+#banner_left_bg{
+	left: 0;
+    width: 60%;
+	z-index: 50;
+}
+#banner_right_bg{
+	right: 0;
+    width: 60%;
+	z-index: 50;
+}
+.home #banner{
+	height: 28.2em;
+}
+
+#container_banner .wrap_center{
+	margin-bottom: 3em;
+    z-index: 100;
+}
+
+.home #container_banner .wrap_center{
+	margin-bottom: 2em;
+}
+#container_banner .wrap_center #main_menu{
+	border-left: 1px solid #000000;
+	left: 0;
+    position: absolute;
+    top: -6em;
+    width: 100%;
+    z-index: 100;
+}
+.home #banner_left{
+	height: 32.1em;
+    left: -9.4em;
+    top: -6em;
+    z-index: 55;
+}
+.home #banner_right{
+	height: 32.1em;
+    right: -10.3em;
+    top: -6em;
+    z-index: 55;
+}
+.home #banner_left_bg{
+	left: 0;
+    width: 60%;
+	z-index: 50;
+}
+.home #banner_right_bg{
+	right: 0;
+    width: 60%;
+	z-index: 50;
+}
+
+#main_menu .main_point{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    float: left;
+    height: 3.5em;
+    margin-right: 0.1em;
+    position: relative;
+    width: 13.8em;
+}
+#main_menu .main_point.last{
+	margin-right: -1em;
+}
+
+#main_menu img{
+	bottom: 0;
+    position: absolute;
+    width: 15.4em;
+}
+#main_menu .main_point a{
+    float: left;
+    font-family: 'Istok Web',sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: 0.8em;
+    width: 12.5em;
+}
+#navigation table td table td{
+	width: 20%;
+	text-align: left;
+	white-space: nowrap;
+	padding: 1em 0.8em;	
+}
+#search_block form{
+	display: none;
+}
+
+#main_column{
+	clear: both;
+    display: none;
+    float: left;
+    position: absolute;
+    margin-left: 0.1em;
+    top: 5em;
+    width: 100%;
+}
+#main_column_home{
+	clear: both;
+    float: left;
+    position: relative;
+    top: -8.5em;
+    width: 50em;
+    margin-bottom: -8.5em;
+}
+#right_column{
+	display: none;
+	background: none repeat scroll 0 0 #FFFFFF !important;
+    border-left: 0.1em solid #000000;
+    float: right;
+    margin-top: 0.1em;
+    position: relative;
+    width: 17em;
+}
+#right_column .emptybox{
+	padding: 0 1em;
+    width: 15em;
+}
+#right_column h2{
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0.5em 0 0.5em 1em;
+}
+#right_column .emptybox h2{
+	font-size: 1.2em;
+    margin-bottom: 0.5em;
+    padding: 0.7em 0;
+}
+#right_column .text_block{
+	padding: 0.3em 1.5em;
+}
+#right_column .emptybox .text_block{
+	padding: 0.3em 0;
+}
+#right_column .text_block p{
+	font-size: 1.1em;
+	margin-bottom: 0.3em;
+}
+#right_column .more{
+	font-weight: normal;
+}
+
+#container_content .wrap_center #content{
+    border: 1px solid #000000;
+    float: left;
+    margin-bottom: -3.4em;
+    position: relative;
+    top: -3.4em;
+    width: 99.9%;
+    z-index: 80;
+}
+#main_menu #main_column table{
+	width: 100%;
+}
+#main_menu #main_column table td{
+	margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+#main_menu #main_column table td ul li{
+	margin-bottom: 1em;
+	position: relative;
+}
+#main_menu #main_column table tr#list_pages td{
+    width: 20.1%;
+    border: none;
+}
+#main_menu #main_column table tr#list_pages td ul{
+	padding: 0.5em 0.5em 0.5em 2.5em;
+	margin-right: 0.1em;
+	margin-left: -0.1em;
+}
+#main_menu #main_column table tr#list_pages td ul li div{
+    cursor: pointer;
+    float: left;
+    height: 1em;
+    left: -2em;
+    position: absolute;
+    top: 0.1em;
+    width: 1em;
+}
+#main_menu #main_column table tr#list_pages td ul li.subs1 div.plus{
+	left: -1.2em;
+}
+#main_menu #main_column table tr#list_pages td ul li.subs1 div.minus{
+	left: -1.2em;
+}
+#main_menu #main_column table tr#list_pages td ul li div.simple{
+	left: -1.5em;
+}
+
+#main_menu #main_column table td ul li ul{
+	display: none;
+}
+
+#main_menu #main_column table td ul>li>ul{
+	display:none;
+}
+#main_menu #main_column table td ul>li.active>ul{
+	display:block;
+}
+
+#main_menu #main_column table td ul>li>ul>li>ul{
+	display:none;
+}
+#main_menu #main_column table td ul>li.active>ul>li.active>ul{
+	display:block;
+}
+
+#main_menu #main_column table tr#list_pages td ul li ul{
+	padding: 0.5em 0.5em 0 1em;
+}
+#main_menu #main_column table tr#list_pages td ul li ul li{
+	list-style: none;
+	margin-bottom: 0.3em;
+}
+
+#main_menu #main_column table tr#list_pages td a{
+	font-size: 1.1em;
+}
+#main_menu #main_column table tr#list_courses td ul li{
+	list-style: url(images/arrow_right.png);
+}
+#main_menu #main_column table tr#list_courses td img{
+	margin-right: -2em;
+}
+.img_td{
+	font-size: 1em !important;
+	padding: 1em !important;
+	text-align: center;
+}
+.img_td img{
+	max-width: 15em !important;
+}
+div.img_td{
+	padding: 0.5em 0 0 !important;
+    width: 100%;
+}
+#main_menu #main_column .text, #main_column_home .text{
+	padding: 2em;
+}
+#main_menu #main_column .text .more{
+	font-weight: normal;
+}
+
+#container_footer .column{
+    float: left;
+    margin-right: 1em;
+    padding-right: 1em;
+	width: 9.5em;
+}
+#container_footer .column.bigger{
+	width: 12em
+}
+#container_footer .img{
+	float: left;
+	margin-top: 1.5em;
+}
+#container_footer .img img{
+	width: 6.9em;
+}
+#container_footer #collback_block{
+    float: right;
+    font-size: 0.9em;
+    margin-top: 0.8em;
+    padding: 0.5em 0 0.5em 1em;
+    width: 23em;
+}
+#container_footer h2{
+	font-size: 1.5em;
+}
+#container_footer #collback_block h2{
+	margin: 0;
+}
+#container_footer #collback_block td{
+	font-size: 1.1em;
+}
+#container_footer #collback_block td.r{
+	text-align: right;
+	padding-left: 1em;
+}
+#footer .border{
+	float: left;
+    margin: 1em 0;
+    width: 70.1em;
+}
+#footer #footer_bottom{
+	width: 100%;
+	position: relative;
+	float: left;
+	height: 6em;
+}
+#footer #copyright{
+	position: absolute;
+	bottom: 2.5em;
+	font-size: 1.1em;
+	left: 0;
+}
+#footer #by_{
+	position: absolute;
+	bottom: 0.5em;
+	right: 0;
+}
+.mac4 img{
+	width: 5.8em;
+}
+.morgana img {
+	width: 13em;
+}
+.social{
+	width: 1.35em;
+}
+#breadcrumbs{
+	padding: 1em;
+}
+.text_content>table{
+	width:100%;
+}
+#text_column h2{
+	font-size: 1.1em;
+}
+#text_column p, #text_column ul li{
+	font-size: 1.1em;
+}
+#text_column ul li{
+	list-style: square;
+	margin-left: 1.5em;
+	padding-bottom: 0.3em;
+}
+#text_column td p{
+	font-size: 1em;
+}
+#text_column table tr td, #breadcrumbs, #right_column td{
+	font-size: 1.1em;
+}
+#text_column table tr td{
+    padding-bottom: 1em;
+    vertical-align: top;
+}
+
+#text_column table.search_results tr td{
+    padding-bottom: 0.2em;
+}
+#text_column table tr td a, #breadcrumbs a, #right_column td a, #text_column td table tr td{
+	font-size: 1em;
+}
+#left_menu_column{
+	display: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin-bottom: 5em;
+    position: relative;
+    width: 15em;
+}
+#text_column{
+	float: left;
+    width: 37em;
+    padding-bottom: 1em;
+}
+#text_column .text_content{
+    padding: 2em 2em 0;
+}
+#text_column .text_content hr{
+	border: none;
+	margin-right: 2em;
+    margin-top: 3em;
+}
+#text_column h3.page_title{
+    font-size: 1.1em;
+    font-weight: normal;
+    height: 2.1em;
+    margin: 0;
+    padding: 0.9em 0 0 2em;
+    position: relative;
+}
+h3#page_title{
+	background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    font-size: 1.1em;
+    font-weight: normal;
+    height: 2.1em;
+    margin: 0 -1em 0 0;
+    padding: 1em 0 0 2em;
+    position: relative;
+    width: 47em;
+}
+h3#page_title img{
+	height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0.5em;
+}
+#right_column h3{
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0.4em 1em;
+}
+#right_column table{
+	width: 100%;
+}
+#right_column td{
+	background: none repeat scroll 0 0 #FFFFFF !important;
+    padding: 0.4em 0.1em;
+}
+#right_column td table tr td{
+	border-bottom: none;
+	padding: 0;
+	font-size: 1em;
+}
+#right_column td.wdth_55{
+	width: 5%;
+}
+#right_column td.image{
+	padding: 0;
+}
+#right_column td.image img{
+	float: left;
+	width: 20.4em;
+}
+#left_menu_column ul li{
+    font-weight: normal;
+    list-style: none outside none;
+    padding: 0.4em 0;
+    position: relative;
+}
+#left_menu_column ul li ul li{
+    margin-left: 2em;
+}
+#left_menu_column ul li ul li.subs1{
+	background: url("images/arrow_right_gray.png") no-repeat scroll 0 1.5em transparent;
+    margin-left: 3em;
+    padding-left: 1em;
+}
+#left_menu_column ul li ul li.subs1.active{
+	background: url("images/arrow_buttom_gray.png") no-repeat scroll 0 1.6em transparent;
+    margin-left: 3em;
+    padding-left: 1em;
+}
+#left_menu_column ul>li>ul{
+	display:none;
+}
+#left_menu_column ul>li.active>ul{
+	display:block;
+}
+
+#left_menu_column ul>li>ul>li>ul{
+	display:none;
+}
+#left_menu_column ul>li.active>ul>li.active>ul{
+	display:block;
+}
+#left_menu_column ul li img, #text_column h3 img{
+	display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+	width: 0.5em;
+	height: 100%;
+}
+#left_menu_column ul li ul{
+	margin-bottom: -1em;
+    margin-top: 1em;
+    position: relative;
+}
+#left_menu_column ul li ul li.first{
+	margin-top: -1px;
+}
+#left_menu_column ul li ul li ul li{
+	
+}
+#left_menu_column ul li.title{
+	list-style: none;
+	font-weight: bold;
+}
+#left_menu_column ul li a{
+	font-size: 1.1em;
+	left: 1em;
+	position: relative;
+	line-height: 1.2em;
+}
+#left_menu_column ul li ul li a{
+	left: 0;
+}
+
+#left_menu_column ul li.active a{
+	font-weight: bold;
+}
+#left_menu_column ul li.active ul li a, #left_menu_column ul li.active ul li.active ul li a{
+    font-weight: normal !important;
+}
+#left_menu_column ul li ul li a{
+	font-weight: normal !important;
+}
+
+#left_menu_column ul li ul li.active a, #left_menu_column ul li.active ul li.active ul li.active a{
+	font-weight: bold !important;
+}
+
+
+#main_column_home table{
+	margin-left: -0.1em;
+}
+#main_column_home table td.list_news, #main_column_home table td.list_pages{
+    padding: 0.5em 1em 0.5em 3em;
+    vertical-align: top;
+}
+#main_column_home table td.list_news{
+	padding: 0.5em 2em;
+	width: 14em;
+	font-size: 1.1em;
+}
+#main_column_home table td.list_pages{
+	font-size: 1.1em;
+}
+#main_column_home table td.list_pages a{
+	font-size: 1em;
+}
+
+#main_column_home table td.list_news img{
+	float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
+#main_column_home table td h2{
+    font-size: 1.1em;
+    padding-bottom: 0.6em;
+    margin-bottom: 0;
+}
+.home #right_column{
+	padding-top: 0.5em;
+	top: -7.2em;
+	margin-bottom: -8.5em;
+}
+#main_column_home table td span{ 
+	font-size: 1.1em;
+}
+#main_column_home table td.list_news div.news_container{
+    clear: both;
+    float: left;
+    padding: 3em 0 1em;
+}
+#main_column_home ul li{
+	font-size: 1em;
+    list-style: square outside none;
+    margin-bottom: 1em;
+}
+
+#text_column div.form, #text_column div.form h2{
+	font-size: 1.1em;
+}
+#text_column div.form table{
+	width: 100%;
+}
+#text_column div.form table.first{
+	width: 65%;
+}
+#text_column div.form table td{
+	font-size: 1em;
+}
+
+#text_column table.courses td{
+    padding-right: 1em;
+}
+
+
+tr.titel_orange td, tr.titel_blue td, tr.titel_violet td{
+	padding-bottom: 0.3em !important;
+}
+.kontakt_color{
+	width: 1em;
+	height: 1em;
+}
+.main_more a{
+	clear: both;
+    float: left;
+    font-size: 1.1em;
+    text-align: left;
+}
+.emptybox .main_more a, .list_news .main_more{
+    font-size: 1em;
+    padding: 1em 0 2em;
+    width: 100%;
+}
+.list_news .main_more{
+	float: left;
+}
+.img_left img{
+	padding-right: 0.5em;
+}
+.newsletterarchiv table td {
+	padding: 0.3em;
+}
+.newsletterarchiv table td table td{
+	padding: 0.5em;
+}
+.newsletterarchiv table td table td table td{
+	padding: 1em;
+}
+#text_column table.pages tr td{
+	padding: 0;
+}
+#text_column #sitemap ul li{
+	list-style: none;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#text_column #sitemap ul li ul li{
+	font-size: 1em;
+	list-style: disc;
+	font-weight: normal;
+}
+
+#logo img{
+	height: 4.1em;
+    width: 19.3em;
+}
+#main_column_home .list_pages ul li{
+	
+}
+#shadow{
+	position: absolute;
+}
+.printer{
+	display: none;
+}
+input, textarea{
+    border: 0.1em solid #000;
+    font-size:1em;
+}

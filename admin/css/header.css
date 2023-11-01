@@ -1,0 +1,152 @@
+#kopf {
+  display:block; 
+  height:293px; 
+  background-color:#fff; 
+  text-align:left; 
+}
+
+#balcken_oben {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:981px;
+  height:60px;
+  background-image:url(../../images/background_oben.jpg)
+}
+
+.clear {clear:both;}
+
+#logo {
+  position:absolute;
+  top:10px;
+  left:17px;
+  height:60px;
+}
+
+#ticker {
+  position:absolute;
+  top:40px;
+  left:200px;
+  height:20px;
+  width:450px;
+}
+
+#topnav {
+  position:absolute;
+  top:35px;
+  left:680px;
+  color: #000066;
+  font-size: 11px;
+}
+
+#suchen {
+  position:absolute; 
+  top:32px; 
+  left:835px;
+}
+
+#Hauptnav {
+  position:absolute;
+  top:61px;
+  left:0px;
+  height:20px;
+  width:981px;
+}
+
+.HauptnavBox1 {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:244px;
+  height:29px;
+  text-align:center;
+  background-color:#000066;
+}
+
+.HauptnavBox2 {
+  position:absolute;
+  top:0px;
+  left:245px;
+  width:244px;
+  height:29px;
+  text-align:center;
+  background-color:#000066;
+}
+
+.HauptnavBox3 {
+  position:absolute;
+  top:0px;
+  left:490px;
+  width:245px;
+  height:29px;
+  text-align:center;
+  background-color:#000066;
+}
+
+.HauptnavBox4 {
+  position:absolute;
+  top:0px;
+  left:736px;
+  width:245px;
+  height:29px;
+  text-align:center;
+  background-color:#000066;
+}
+
+.HauptnavBox1_aktiv {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:244px;
+  height:29px;
+  text-align:center;
+  background-color:#FF8A0D;
+}
+
+.HauptnavBox2_aktiv {
+  position:absolute;
+  top:0px;
+  left:245px;
+  width:244px;
+  height:29px;
+  text-align:center;
+  background-color:#FF8A0D;
+}
+
+.HauptnavBox3_aktiv {
+  position:absolute;
+  top:0px;
+  left:490px;
+  width:245px;
+  height:29px;
+  text-align:center;
+  background-color:#FF8A0D;
+}
+
+.HauptnavBox4_aktiv {
+  position:absolute;
+  top:0px;
+  left:736px;
+  width:245px;
+  height:29px;
+  text-align:center;
+  background-color:#FF8A0D;
+}
+
+#marquee_home {
+  position:absolute;
+  top:91px;
+  left:0px;
+  height:212px;
+  width:981px;
+}
+
+#marquee {
+  position:absolute;
+  top:1px;
+  left:151px;
+  height:212px;
+  width:630px;
+}
+
+

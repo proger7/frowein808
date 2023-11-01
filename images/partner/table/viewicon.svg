@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 21" width="31" height="21">
+	<title>view icon</title>
+	<style>
+		.s0 { fill: none;stroke: #e2001a;stroke-width: 2 } 
+	</style>
+	<g id="view icon">
+		<path id="Vector" class="s0" d="m29 11c0 0-5.8 8-13 8-7.2 0-13-8-13-8 0 0 5.8-8 13-8 7.2 0 13 8 13 8z"/>
+		<path id="Vector" class="s0" d="m20 11c0 2.2-1.8 4-4 4-2.2 0-4-1.8-4-4 0-2.2 1.8-4 4-4 2.2 0 4 1.8 4 4z"/>
+	</g>
+</svg>

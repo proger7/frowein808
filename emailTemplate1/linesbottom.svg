@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 615 40" width="615" height="40">
+	<title>lines</title>
+	<style>
+		.s0 { fill: none;stroke: #e2001a;stroke-width: 2 } 
+	</style>
+	<g id="lines">
+		<path id="Line 7" class="s0" d="m247 3v35z"/>
+		<path id="Line 11" class="s0" d="m491 3v35z"/>
+		<path id="Line 4" class="s0" d="m64 3v35z"/>
+		<path id="Line 15" class="s0" d="m3 3v35z"/>
+		<path id="Line 8" class="s0" d="m308 3v35z"/>
+		<path id="Line 12" class="s0" d="m552 3v35z"/>
+		<path id="Line 5" class="s0" d="m125 3v35z"/>
+		<path id="Line 9" class="s0" d="m369 3v35z"/>
+		<path id="Line 13" class="s0" d="m613 3v35z"/>
+		<path id="Line 6" class="s0" d="m186 3v35z"/>
+		<path id="Line 10" class="s0" d="m430 3v35z"/>
+	</g>
+</svg>

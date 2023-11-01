@@ -1,0 +1,1286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'self'; frame-src 'self ';">
+    <meta name="referrer" content="no-referrer, same-origin">
+    -->
+
+
+
+
+        <title>{title} | Frowein 808</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="{title}">
+
+    <link href="https://www.frowein808.de/style/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.frowein808.de/style/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://www.frowein808.de/style/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.frowein808.de/style/fontawesome/css/brands.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.frowein808.de/style/fontawesome/css/solid.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.frowein808.de/style/bootstrap-table.min.css">
+
+    <!-- Map Styles -->
+    <link href="https://www.frowein808.de/style/jqvmap-master/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <!-- Datepicker Styles -->
+    <link rel='stylesheet' href='https://www.frowein808.de/style/bootstrap-datepicker.min.css'>
+
+        	<link rel="stylesheet" type="text/css" media="screen,projection" href="https://www.frowein808.de/style/bootstrap.min.css" />  
+        	<link rel="stylesheet" type="text/css" media="screen,projection" href="https://www.frowein808.de/style/style.css?5274" />  
+    
+    <script src="/js/jquery.min.js"></script>
+    <!--<script src="/js/api-de.js"></script>-->
+
+    <script>
+        jQuery.noConflict();
+    </script>
+
+        
+        	<script type="text/javascript" src="https://www.frowein808.de/js/bootstrap.min.js"></script>  
+        	<script type="text/javascript" src="https://www.frowein808.de/js/bootstrap.bundle.min.js"></script>  
+        	<script type="text/javascript" src="https://www.frowein808.de/js/popper.min.js"></script>  
+        	<script type="text/javascript" src="https://www.frowein808.de/js/ckeditor.js"></script>  
+        	<script type="text/javascript" src="https://www.frowein808.de/js/main.js"></script>  
+    
+    <script type="text/javascript" src="/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/js/hide.password.js"></script>
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript" src="/js/search.js"></script>
+
+
+
+    <script type="text/javascript" src="/js/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="/js/select2.js"></script>
+    <script type="text/javascript" src="/js/language.js"></script>
+    <script type="text/javascript" src="/js/personalForm.js"></script>
+
+    <!-- Datepicker -->
+    <script type="text/javascript" src='/js/bootstrap-datepicker.min.js'></script>
+    <!-- Select Change Item -->
+    <script type="text/javascript" src='/js/select-change-item-content.js'></script>
+    <!-- Germany Map -->
+    <script type="text/javascript" src="/js/jqvmap-master/jquery.vmap.js"></script>
+    <script type="text/javascript" src="/js/jqvmap-master/maps/jquery.vmap.germany.js"></script>
+    <script type="text/javascript" src="/js/jqvmap-master/jquery.vmap.europe-better.js"></script>
+    <script type="text/javascript" src="/js/jqvmap-master/maps/jquery.vmap.world.js"></script>
+    <script type="text/javascript" src="/js/jqvmap-master/jquery.vmap.sampledata.js"></script>
+    <!--  Submenu -->
+    <script type="text/javascript" src="/js/submenu.js"></script>
+
+
+
+    <!-- from unpkg -->
+    <!-- <script type="module" src="https://unpkg.com/friendly-challenge@0.9.9/widget.module.min.js" async defer></script>
+    <script nomodule src="https://unpkg.com/friendly-challenge@0.9.9/widget.min.js" async defer></script> -->
+
+    <!-- OR from jsdelivr -->
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/friendly-challenge@0.9.9/widget.module.min.js"
+      async
+      defer
+    ></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/friendly-challenge@0.9.9/widget.min.js" async defer></script> -->
+
+
+
+    <!-- Multiselect -->
+    <script type="text/javascript" src="/js/multiselect/jquery.multi-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/multiselect/example-styles.css">
+
+    <!-- Mobile Select -->
+    <script type="text/javascript" src="/js/mobileSelect/bootstrap-fullscreen-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/mobileSelect/bootstrap-fullscreen-select.css">
+
+    <script type="text/javascript">
+    jQuery(function ($){
+
+
+      var full_url = window.location.pathname;
+      var rest = full_url.split('/');
+      var l = rest.length - 1; 
+      var subUrl = rest[rest.length - l];
+
+
+
+      $('#id_select2_example').on('change', function () {
+          var url = $(this).val();
+          if (url) {
+
+		      if(subUrl == 'de') {
+		        var x = full_url.replace('de', 'en');
+		        window.location = x;
+
+		      } else if(subUrl == 'en') {
+		        var x = full_url.replace('en', 'de');
+		        window.location = x;
+		      }
+              
+          }
+          return false;
+      });
+
+
+
+      $('.submenu_items #list_products').each( function(i,v) {
+        $(this).hover(function () {
+              var id = $(this).attr('data-id');
+              var allProd = $(this).attr('data-prod');
+              var allCat = $(this).attr('data-cat');
+
+              $.ajax({
+                  url:"/content/show_submenu_products.php",
+                  method:"POST",
+                  data:{product_id:id,prod_checker:allProd,cat_checker:allCat},
+                  success:function(data){
+                      $('.productlist_show').html(data);
+                  }
+              });
+
+              $.ajax({
+                  url:"/content/show_submenu_catdesc.php",
+                  method:"POST",
+                  data:{product_id:id,cat_checker:allCat},
+                  success:function(data){
+                      $('.category_desc').html(data);
+                  }
+              });
+
+          });
+      });
+    });
+    </script>
+
+
+    <!-------------------------------------------------------------------------------------------->
+
+
+
+        <!-------------------------------------------------------------------------------------------->
+{zipansd}
+</head>
+<body class="include">
+ 
+<header class="header__container">
+    <div class="topHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-12 hideLines">
+                    <img src="/images/svg/lines.svg">
+                </div>
+                <div class="col-md-7 col-sm-12 col-12 items_top">
+                  <div class="container paddingZero">
+                    <div class="row fullWidth">
+                        <div class="col-md-3 col-sm-12 col-12 support">
+                          <a href="/de/support/" class="support-link"><img src="/images/svg/support icon.svg">Kontaktformular</a>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-12 tel">
+                          <a href="tel:+49 7432 956-0" class="tel-link"><img src="/images/svg/tel.svg">+49 7432 956-0</a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12 email">
+                          <a href="mailto:info@frowein808.de" class="email-link"><img src="/images/svg/mail.svg">info@frowein808.de</a>
+                        </div>
+                    </div>                    
+                  </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+   <div class="container">
+      <div class="top">
+         <div class="logo th">
+            <a href="https://www.frowein808.de/de"><img style="width: 70%" class="toplogo" src="/office365/teams/frowein808-msteamslogo.png"></a>
+         </div>
+         <div class="name th" id="nameLogo">
+            Frowein GmbH & Co. KG
+         </div>
+
+         <div class="name th">
+    			
+    		</div>
+
+        
+        
+        <div class="partner th">
+                          <a href="/de/partner/"><img src="/images/svg/partner icon.svg"> Partner Login</a>
+                    </div>          
+
+
+         <div class="lang th">
+            <select class="form-select lang-switcher" id="id_select2_example">
+                <option data-img_src="/images/flags/de.png" selected value="de">DE</option>
+                <option data-img_src="/images/flags/en.png"  value="en">EN</option>
+            </select>
+         </div>
+      </div>
+   </div>
+
+   <div class="bottom">
+      <div class="container">
+         <nav class="menu">
+         	<ul class="top-menu">
+   <li>
+      <a href="/de/"><img src="/images/svg/Startseite.svg"><span class="right-arrows">»</span><span class="titleHeader">Startseite</span></a>
+   </li>
+   <li>
+      <a href="/de/about/"><img src="/images/svg/Unternehmen.svg"><span class="right-arrows">»</span><span class="titleHeader">Unternehmen</span></a>
+   </li>
+   <li class="has-submenu">
+    <a href="/de/products/">
+      <img src="/images/svg/allproducts1_red1.svg"><span class="right-arrows">»</span><span class="titleHeader">Produkte</span>
+    </a>
+  </li>
+   <li>
+      <a href="/de/news/"><img src="/images/svg/aktuelles.svg"><span class="right-arrows">»</span><span class="titleHeader">News</span></a>
+   </li>
+   <li>
+      <a href="/de/contact/"><img src="/images/svg/Kontakt.svg"><span class="right-arrows">»</span><span class="titleHeader">Kontakt</span></a>
+   </li>
+</ul>         </nav>
+      </div>
+   </div>
+
+        <div class="nav-main container" style="display: none;">
+      <div class="row w-100">
+        <div class="col-auto border-end">
+          <ul class="submenu_items pt-4 ps-4 pe-3 pb-3">
+
+            
+            <li class="nav-all_products" id="list_products" data-id="" data-cat="1">
+              <a href="/de/products/">Kategorie Übersicht</a>
+            </li>
+            <li class="nav-all_products" id="list_products" data-id="" data-prod="1">
+              <a href="/de/produkt-uebersicht/">Produktübersicht</a>
+            </li>
+
+
+                           
+                               <li class="nav1" id="list_products" data-id="INSEKTENBEKÄMPFUNG">
+                    <a href="https://www.frowein808.de/de/products/INSEKTENBEKÄMPFUNG">INSEKTENBEKÄMPFUNG <img src="/images/submenu/arrow1.svg" class="ps-4"></a>
+                 </li>
+              
+
+                           
+                               <li class="nav8" id="list_products" data-id="SPEZIALPRODUKTE">
+                    <a href="https://www.frowein808.de/de/products/SPEZIALPRODUKTE">SPEZIALPRODUKTE <img src="/images/submenu/arrow1.svg" class="ps-4"></a>
+                 </li>
+              
+
+                           
+                               <li class="nav2" id="list_products" data-id="SCHADNAGERBEKÄMPFUNG">
+                    <a href="https://www.frowein808.de/de/products/SCHADNAGERBEKÄMPFUNG">SCHADNAGERBEKÄMPFUNG <img src="/images/submenu/arrow1.svg" class="ps-4"></a>
+                 </li>
+              
+
+                           
+                               <li class="nav9" id="list_products" data-id="TAUBENABWEHR">
+                    <a href="https://www.frowein808.de/de/products/TAUBENABWEHR">TAUBENABWEHR <img src="/images/submenu/arrow1.svg" class="ps-4"></a>
+                 </li>
+              
+
+                           
+                               <li class="nav3" id="list_products" data-id="BETTWANZENBEKÄMPFUNG">
+                    <a href="https://www.frowein808.de/de/products/BETTWANZENBEKÄMPFUNG">BETTWANZENBEKÄMPFUNG <img src="/images/submenu/arrow1.svg" class="ps-4"></a>
+                 </li>
+              
+
+                           
+                               <li class="nav4" id="list_products" data-id="DESINFEKTIONS- & PFLEGEMITTEL">
+                    <a href="https://www.frowein808.de/de/products/DESINFEKTIONS- & PFLEGEMITTEL">DESINFEKTIONS- & PFLEGEMITTEL <img src="/images/submenu/arrow1.svg" class="ps-4"></a>
+                 </li>
+              
+
+                           
+                               <li class="nav6" id="list_products" data-id="APPLIKATIONSGERÄTE">
+                    <a href="https://www.frowein808.de/de/products/APPLIKATIONSGERÄTE">APPLIKATIONSGERÄTE <img src="/images/submenu/arrow1.svg" class="ps-4"></a>
+                 </li>
+              
+
+                       </ul>
+        </div>
+        <div class="col border-end">
+          <div class="row">
+            <div class="col">
+              <ul class="submenu_sub-items pt-4 ps-2 pe-3 pb-3 productlist_show">
+
+                                    <div class="row mb-2 subCategoriesItems" style="border: 1px solid #dee2e6;">
+                      <div class="col-md-4 col-sm-12 col-12 p-2">
+                        <img class="card-img-top" src="https://www.frowein808.de/uploads/148907114063.05.jpg" alt="" style="" id="" />                      </div>
+                      <div class="col-md-8 col-sm-12 col-12 pt-2" id="verticallyCenter">
+                        <a href="/de/products/INSEKTENBEKÄMPFUNG" class="sub__cat-title">INSEKTENBEKÄMPFUNG</a>
+                        <p class="sub__cat-content">Die Bekämpfung von Schadinsekten kann mit verschiedenen Formulierungen erfolgen. Aufgabe der Formuliertechnik ist es, biozide Wirkstoffe zu speziellen Präparaten für bestimmte Anwendungsmethoden aufzubereiten.</p>
+                      </div>
+                    </div>
+                                                        <div class="row mb-2 subCategoriesItems" style="border: 1px solid #dee2e6;">
+                      <div class="col-md-4 col-sm-12 col-12 p-2">
+                        <img class="card-img-top" src="https://www.frowein808.de/uploads/148907124100.51.jpg" alt="" style="" id="" />                      </div>
+                      <div class="col-md-8 col-sm-12 col-12 pt-2" id="verticallyCenter">
+                        <a href="/de/products/SCHADNAGERBEKÄMPFUNG" class="sub__cat-title">SCHADNAGERBEKÄMPFUNG</a>
+                        <p class="sub__cat-content">Wanderratten, Hausratten und Hausmäuse zählen zu den übelsten Schädlingen. Sie fressen, zerstören und beschmutzen Nahrungs-, Genuß- und Futtermittel sowie andere Waren, Inventar, Einrichtungsgegenstände, Bauteile usw.</p>
+                      </div>
+                    </div>
+                                                        <div class="row mb-2 subCategoriesItems" style="border: 1px solid #dee2e6;">
+                      <div class="col-md-4 col-sm-12 col-12 p-2">
+                        <img class="card-img-top" src="https://www.frowein808.de/uploads/148907127665.72.jpg" alt="" style="" id="" />                      </div>
+                      <div class="col-md-8 col-sm-12 col-12 pt-2" id="verticallyCenter">
+                        <a href="/de/products/BETTWANZENBEKÄMPFUNG" class="sub__cat-title">BETTWANZENBEKÄMPFUNG</a>
+                        <p class="sub__cat-content">Die Bettwanze (lat. Cimex lectularius) galt in Deutschland und auch in großen Teilen Europas für mehrere Jahrzehnte als praktisch ausgestorben, da es in der Zeit von 1960 bis Ende der 1990er Jahre fast keine Meldungen über Bettwanzenbefall gab.</p>
+                      </div>
+                    </div>
+                                                        <div class="row mb-2 subCategoriesItems" style="border: 1px solid #dee2e6;">
+                      <div class="col-md-4 col-sm-12 col-12 p-2">
+                        <img class="card-img-top" src="https://www.frowein808.de/uploads/148907152715.91.jpg" alt="" style="" id="" />                      </div>
+                      <div class="col-md-8 col-sm-12 col-12 pt-2" id="verticallyCenter">
+                        <a href="/de/products/APPLIKATIONSGERÄTE" class="sub__cat-title">APPLIKATIONSGERÄTE</a>
+                        <p class="sub__cat-content">Entscheidend für den Erfolg einer Schädlingsbekämpfungsmaßnahme ist auch die richtige Applikation und Dosierung. Hierzu sind spezielle Anwendungsgeräte notwendig.</p>
+                      </div>
+                    </div>
+                                    
+                
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="pt-4 ps-3 pe-2 pb-3 category_desc">
+                                <div class="row mb-2 subCategoriesItems" style="border: 1px solid #dee2e6;">
+                      <div class="col-md-4 col-sm-12 col-12 p-2">
+                        <img class="card-img-top" src="https://www.frowein808.de/uploads/167042610426.38.jpg" alt="" style="" id="" />                      </div>
+                      <div class="col-md-8 col-sm-12 col-12 pt-2" id="verticallyCenter">
+                        <a href="/de/products/SPEZIALPRODUKTE" class="sub__cat-title">SPEZIALPRODUKTE</a>
+                        <p class="sub__cat-content">Spezielle Produkte für den professionellen Bereich wie Geruchsüberdecker, ein Produkt zur Fixierung von Holzschutzbioziden und spezielle Reinigungspräparate runden das Produktportfolio ab.</p>
+                      </div>
+                    </div>
+                                                        <div class="row mb-2 subCategoriesItems" style="border: 1px solid #dee2e6;">
+                      <div class="col-md-4 col-sm-12 col-12 p-2">
+                        <img class="card-img-top" src="https://www.frowein808.de/uploads/148907165476.46.jpg" alt="" style="" id="" />                      </div>
+                      <div class="col-md-8 col-sm-12 col-12 pt-2" id="verticallyCenter">
+                        <a href="/de/products/TAUBENABWEHR" class="sub__cat-title">TAUBENABWEHR</a>
+                        <p class="sub__cat-content">Verwilderte Stadttauben sind gefürchtete Gesundheits- und Materialschädlinge. Taubenkot enthält oft sehr gefährliche Krankheitsüberträger wie z. B. Salmonellen.</p>
+                      </div>
+                    </div>
+                                                        <div class="row mb-2 subCategoriesItems" style="border: 1px solid #dee2e6;">
+                      <div class="col-md-4 col-sm-12 col-12 p-2">
+                        <img class="card-img-top" src="https://www.frowein808.de/uploads/167042605369.03.jpg" alt="" style="" id="" />                      </div>
+                      <div class="col-md-8 col-sm-12 col-12 pt-2" id="verticallyCenter">
+                        <a href="/de/products/DESINFEKTIONS- & PFLEGEMITTEL" class="sub__cat-title">DESINFEKTIONS- & PFLEGEMITTEL</a>
+                        <p class="sub__cat-content">Die Desinfektion von Händen und Flächen ist ein unerlässlicher Bestandteil der Hygiene. Ob auf alkohol- oder chlorbasierten Formulierungen. Hier finden Sie die richtige Lösung.</p>
+                      </div>
+                    </div>
+                                    
+              <ul class="submenu_sub-items py-2">
+                <li><a style="color: #e3001b" href="/de/products/">Alle Kategorien anzeigen</a></li>
+              </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-red" id="mobilenav">
+   <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/images/Frowein_808_mit_biozide_White.svg" width="44" height="26">
+      </a>
+
+      <div class="lang th men">
+         <ul>
+            <li><a href="/de/" class="active-lang">DE</a></li>
+            <li><a href="/en/" class="">EN</a></li>
+         </ul>
+      </div>
+
+      <button class="navbar-toggler" id="hamburgerButton" type="button" data-bs-toggle="collapse" data-bs-target="#navMobMenu" aria-controls="navMobMenu" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMobMenu">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center" id="navmobileMenu">
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="/de/">Startseite</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/de/about/">Unternehmen</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/de/products/">Produkte</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/de/news/">News</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/de/contact/">Kontakt</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>
+<h1 style="position:absolute;left:-5000px">Frowein GmbH. Competence in Biocides.</h1>
+
+
+	
+<div class="breadcrumbs py-4">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="/de/">Startseite</a></li>
+        <li class="breadcrumb-item"><a href="/de/news/">NEWS</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{title}</li>
+      </ol>
+    </nav>
+</div>
+<div class="post-detail__main-container pt-md-5">
+	<div class="container">
+		<h2 class="post-detail__title">{title}</h2>
+
+		
+			    <div class="row pt-2">
+	      <div class="col-lg-12 pt-md-4 pt-lg-0">
+	        	        	        	<p class="post-detail__content">{str}</p>
+	        	        	        	<p class="post-detail__content"><ul>{archive}</ul></p>
+	        	      </div>
+
+	      <h2 class="neuen__news pt-md-5">AKTUELLE NEWS 2022</h2>
+			<div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+			    <div class="carousel-inner">
+			    				    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/342/">
+										<img src="https://www.frowein808.de/uploads/165158535789.19.jpeg" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">08.12.2022</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/342/">WAINS GmbH: Full-Service für digitales Schädlingsmanagement</a></h3>
+									<p class="news__moretext">Unser Tochterunternehmen WAINS GmbH startet durch:Vom KI-basierten Insektenmonitoring traptice® zum digitalen Komplettanbieter - Lösungen für unsere Kunden und für die Branche neu gedacht.Gestartet mit unserem KI-basierten Insektenmonitoring und einer gigantischen Cloud im Rücken, können wir nun mit unserem Portfolio alles anbieten, was unsere Kunden im täglichen Betrieb alles benötigen:Insektenmonitoring, Schadnagerlösungen, Temperaturüberwachung, GPS-Tracking, CO2-Messung, Gerätesteuerung wie bspw. Thermische Öfen u. v. m.Unsere Schadnagerlösung sehen wir derzeit in der Kombination Hard- und Software klar als technologischen Spitzenreiter auf dem Markt:* Einfachste Konfiguration der Falle über NFC mit unserer kostenlosen WAINS App* Senden der Daten über LoRaWAN 1.0.3* über 1 Jahr Batterielaufzeit mit CR2450 Lithium Batterie* Einsatzmöglichkeiten von - 20 °C bis 40 °C* Spritzwasser- und Staubgeschütztes GehäuseUnd wir haben die „Tunnellösung“ wieder zum dem gemacht, für was sie konzipiert wurde.Kombiniert mit unserer Cloud-Lösung unschlagbar:- Berechtigungs-Management für Angestellte und Kunden- Flexible Organisation der Geräte in Gruppen- Möglichkeit einer eigenen Enterprise-Instanz mit kundeneigenem CI- Browserbasiert für PC, Tablet und Smartphone- API-Schnittstelle für externe Systeme- Export der Daten via Excel oder CSV- Anbindung externer Programme per Drag & Drop (bspw. MS-Dynamics, Jira, div. Shopsysteme, u.v.m.) – dadurch sind teils umständliche und kostenintensive Schnittstellenprogrammierungen nicht mehr erforderlich.Alle WAINS-Produkte inkl. unserer Cloud-Lösung stellen wir auf der PEST-PROTECT® vom 11.-12. Mai 2022 auf unserem Stand Nr. E 403 vor. Wir freuen uns darauf!</p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/338/">
+										<img src="https://www.frowein808.de/uploads/164725098555.91.jpeg" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">08.12.2022</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/338/">PEST-PROTECT ® I ARENA Berlin</a></h3>
+									<p class="news__moretext">Wir sind dabei, Sie auch? Alle zwei Jahre präsentiert die PEST-PROTECT® die Highlights aus den Branchen Schädlingsbekämpfung, Desinfektion, Pflanzenschutz und Holz- und Bautenschutz.Auch wir sind natürlich vor Ort vertreten und würden uns über Ihren Besuch freuen! FROWEIN GMBH & CO. KG: Stand D401WAINS GmbH: Stand E403Weitere Informationen erhalten Sie unter https://www.pest-protect.eu/de/ oder direkt bei uns.</p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/333/">
+										<img src="https://www.frowein808.de/uploads/162644135225.01.png" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">08.12.2022</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/333/">Webinar-Zusammenfassung "Insektenmonitoring mit künstlicher Intelligenz"</a></h3>
+									<p class="news__moretext">Am 1. Juni 2021 haben DpS und WAINS ein Webinar zum Thema "Insektenmonitoring mit künstlicher Intelligenz" veranstaltet.Um "Insektenmonitoring mit künstlicher Intelligenz" ging es beim Webinar am 1. Juni 2021, das DpS und WAINS veranstaltet haben. In einer halbstündigen Präsentation stellte Business Development Managerin Stefanie Domzig traptice vor. Im Anschluss wurden Fragen beantwortet. Geschäftsführer Steffen König stand für die Fragerunde ebenfalls zur Verfügung.Die Zusammenfassung des Webinars erschien in der aktuellen DpS-Ausgabe 07 + 08/2021.Lesen Sie gerne mehr dazu im nachfolgenden Bericht unter "Download".</p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/12/">
+										<img src="https://www.frowein808.de/uploads/news_picture_12.jpg" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">08.12.2022</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/12/">EG-Höchstmengen jetzt in Deutschland auch für Futtermittel gültig</a></h3>
+									<p class="news__moretext">Juni 2002Mit der vierten Verordnung zur Änderung futtermittelrechtlicher Verordnungen wurden die EG-Höchstmengen nunmehr in nationales Recht umgesetzt.</p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/340/">
+										<img src="https://www.frowein808.de/uploads/165158539617.59.jpeg" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">03.05.2022</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/340/">PEST-PROTECT ® I ARENA Berlin: Wir sind dabei, Sie auch?</a></h3>
+									<p class="news__moretext">Alle zwei Jahre präsentiert die PEST-PROTECT® die Highlights aus den Branchen Schädlingsbekämpfung, Desinfektion, Pflanzenschutz und Holz- und Bautenschutz.Auch wir sind natürlich vor Ort vertreten und würden uns über Ihren Besuch freuen! Neben der Vorstellung neuer Produkte freuen wir uns auch auf das Gespräch mit Ihnen. > FROWEIN GMBH & CO. KG: Stand D401> WAINS GmbH: Stand E403Weitere Informationen zur Messe erhalten Sie unter https://lnkd.in/dEtn2Cy7 oder direkt bei uns.</p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/339/">
+										<img src="https://www.frowein808.de/uploads/165158541136.61.jpeg" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">03.05.2022</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/339/">Unser neues Logo: Haben Sie’s schon bemerkt?</a></h3>
+									<p class="news__moretext">Wir haben unser Logo einer Erfrischungskur unterzogen. Seit 1934 ist 808 am Markt. Seit 1951 als nationale Marke, dann 1966 als internationales Markenzeichen und seit 2016 als EU-Marke eingetragen. Mittlerweile sind es mehr als 85 Jahre in der damals gängigen 30er-Jahre Typographie. Natürlich werden wir das Logo weiterhin als Marke geschützt lassen – nach so langer Zeit gibt man das nicht einfach her. Für uns war klar, dass wir an 808 festhalten. Früher hat man nicht bei Frowein gearbeitet, sondern bei acht-null-acht. Unsere Kunden kauften nicht bei Frowein, sondern sie kauften bei acht-null-acht. Das neue Logo soll dies unterstreichen und die 808 wieder mehr in den Fokus rücken lassen. Schritt für Schritt werden wir nun alles an das neue Layout anpassen. Bis zum Jahresende sollte alles umgesetzt sein.</p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/334/">
+										<img src="https://www.frowein808.de/uploads/162980015054.16.png" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">24.08.2021</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/334/">Sogar die Küchenschabe geht der Digitalisierung auf den Leim</a></h3>
+									<p class="news__moretext">Albstädter Unternehmen Wains macht Schädlingsbekämpfung internetfähig
+Das Albstädter Start-up Wains, ein Joint Venture des Traditionsunternehmens Frowein und der Digitalschmiede MeetNow!, ist mit seiner digitalen Insektenfalle an den Markt gegangen. Die hört auf den Namen traptice und fängt Schadinsekten – ganz analog mit Klebefolie und Lockstoffen und ganz digital mit Echtzeit-Monitoring, Alarmfunktion und Cloud-Anbindung. Seit Juni 2021 ist das Wains-Produkt marktreif und nach seiner einjährigen Erprobungsphase bereits bei mehreren Dutzend Kunden im Einsatz. Potenzial für traptice sehen die Macher reichlich: Allein in Europa seien für kriechende Insekten mehrere Millionen analoge Fallen aufgestellt, die nur darauf warteten, digitalisiert zu werden.
+Digitales Monitoring schafft Raum und Zeit für neue Chancen
+„Stellen Sie sich vor, Sie sind der Manager eines Fast-Food-Restaurants. Wenn Sie sich darauf verlassen können, dass Sie garantiert als erster wissen, wenn sich eine Schabe in Ihre Küche verirrt hat, haben Sie einen großen Vorteil, und der heißt Zeit. Zeit, um zu verhindern, dass aus einem Schädling hunderte werden, Zeit, um der behördlichen Lebensmittelkontrolle oder Gerüchten in den sozialen Medien zuvorzukommen.“ Damit bringt Steffen König, Geschäftsführer der Wains GmbH, den Nutzen des Produkts auf den Punkt. Zumindest für Endanwender dürfte der Vorteil durch Echtzeit-Monitoring auf der Hand liegen.
+Schädlingsbekämpfern erleichtert die engmaschigere Kontrolle der Fallen die Arbeit, weil sie ihnen viele überflüssige Wege erspart: die turnusmäßige Fallenkontrolle, teils an unzugänglichen Orten und quasi auf Verdacht, ist hinfällig. Das schafft Zeit um bestehende Kunden besser zu beraten oder den Kundenstamm auszubauen. Außerdem, so Wains-Mitgründer und Co-Geschäftsführer Benjamin Ruoff, liefere das digitale Monitoring jede Menge Zusatzdaten: „Sowohl den Befall selbst als auch den Verlauf der Umgebungsfaktoren kann der Schädlingsbekämpfer zeitlich dokumentieren. Das kann bei der Ursachenforschung hilfreich sein.“ Derzeit arbeitet Wains am Wissensvorsprung der Falle: Mithilfe von KI soll traptice zukünftig verraten, auf welchen Namen das erlegte Getier in der Falle hört – auf Deutsch, Englisch, Lateinisch sowie in der Umgangssprache.
+Spezialisten aus der analogen und der digitalen Welt
+Wains ist ein Joint Venture der Albstädter Unternehmen Frowein und MeetNow!. Ersteres ist im Bereich der Schädlingsbekämpfung eine feste Größe; das Unternehmen ist seit 1934 am Markt und entwickelt, produziert und vertreibt Schädlingsfallen und Biozide. MeetNow! kommt von der digitalen Seite. Zu den Leistungen des Unternehmens gehören Strategien und Geschäftsmodelle für die digitale Transformation. Auch die notwendige Technologie sowie Soft- und Hardware entwickelt MeetNow. Bei den traptice-Fallen von Wains sorgt das Digitalunternehmen für Sensoren, Kameras und eine digitale Sendeeinheit, die es vom Prototyp bis zum fertigen Serienprodukt entwickelt hat. Darüber werden Daten und Aufnahmen – entsprechend verschlüsselt – an die Cloud gesendet, wo sie für Schädlingsbekämpfer und Kunden jederzeit abrufbar sind. Daneben hat sich MeetNow! um die Website, das Branding, das gesamte Online-Marketing und die Marketing Automatisierung gekümmert.
+Benjamin Ruoff, der neben Wains auch MeetNow! vorsteht, erklärt, wie es zum Joint Venture kam: „Beide Seiten wollten ihr originäres Geschäftsmodell ausbauen, die analoge Welt mit der digitalen verbinden. Nachdem wir die Idee entwickelt hatten, war klar, dass wir nicht nur auf Projektebene zusammenarbeiten wollen. Wir beide allein könnten auch keine Millioneninvestition stemmen. Gemeinsam, und zusammen mit Kapitalgebern, haben wir viel mehr Möglichkeiten.“
+Positive Marktaussichten für digitale Insektenfalle und digitale Wissensvermittlung
+Mit den Ergebnissen des jungen Unternehmens sind Steffen König und Benjamin Ruoff zufrieden. Das Feedback der Testkunden sei gut, neue Anfragen erreichten das Unternehmen stetig. Die Wains-Macher überrascht das nicht. Sie sehen viel Potenzial für traptice: Allein in Europa gebe es mehrere Millionen – analoge – Fallen für kriechende Insekten.
+Neben dem digitalen Insektenfang hat Wains außerdem eine wachsende Nachfrage im Bereich Know-how identifiziert. Steffen König: „In Deutschland ist der Schädlingsbekämpfer ein Ausbildungsberuf, aber das ist in den wenigsten Regionen der Welt der Fall. Wer sich als ‚Pest Controller‘ selbstständig macht, muss sich die nötige Kompetenz selbst aneignen. Neben der digitalen Insektenfalle wollen wir diesen Leuten zukünftig eine Wissensdatenbank bieten.“
+Über die Wains GmbH
+Das Joint Venture WAINS GmbH konzentriert sich auf die digitale Schädlingsbekämpfung. Gegründet wurde das Unternehmen im Jahr 2020 von Experten für Schädlingsbekämpfung und IT, deren Know-how und Erfahrung in das Unternehmen einfließt. Ziel von Wains ist es, die Bekämpfung von Insektenschädlingen zu revolutionieren. Mit den traptice® Fallen liefert das Unternehmen ein neues Konzept zur digitalen Überwachung von Insekten- und Nagetierschädlingen, das Schädlingsbekämpfer und ihre Kunden in der Industrie, Pharmazie, Gastgewerbe, Gastronomie und weiteren Branchen unterstützt.</p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/332/">
+										<img src="https://www.frowein808.de/uploads/no-photo.png" class="img-fluid no-photo-carousel">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">30.06.2021</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/332/">Pressemitteilung des IVA:  Biozid-Verordnung - Überregulierung  im nationalen Alleingang</a></h3>
+									<p class="news__moretext">Vom Bundesrat verabschiedete Verordnung bevormundet Verbraucher und gefährdet Existenz mittelständischer Hersteller
+(Frankfurt a. M., 28. Juni 2021)  Das am 25. Juni 2021 vom Bundesrat beschlossene Selbstbedienungsverbot für Produkte wie Mückensprays, Mottenpapiere oder Ameisenköder ist nach Ansicht des Industrieverbands Agrar e. V. (IVA) ein überflüssiger und sogar schädlicher nationaler Alleingang. Die betroffenen Mittel sind im Rahmen der geltenden EU-Biozidprodukte-Verordnung bereits streng reguliert. Die EU-Verordnung bezeichnet sie ausdrücklich als „notwendig“, um Organismen zu bekämpfen, die der menschlichen oder tierischen Gesundheit schaden können.
+Viele Biozid-Produkte haben sich seit Jahrzehnten in Millionen Haushalten bewährt. Mit der nun verabschiedeten Verordnung wird Verbrauchern künftig der Zugang zu diesen haushaltsüblichen Produkten deutlich erschwert. Der stationäre wie auch der Online-Handel dürfen solche Biozide dann nur noch nach ausführlicher Beratung durch eigens geschulte Verkäufer abgeben.
+„Warum nur in Deutschland Verbraucher auf einmal nicht mehr in der Lage sein sollen, trotz der ausführlichen Packungsbeilagen mit den Produkten verantwortungsvoll umzugehen, bleibt das Geheimnis des Gesetzgebers“, kritisiert IVA-Geschäftsführer Martin May. Er verweist außerdem auf den extrem hohen finanziellen und administrativen Aufwand, der in Form von Investitionen für abschließbare Schränke und Mitarbeiterschulungen auf den Handel zukommt: „Unter diesen Umständen werden Supermärkte und Drogerien die Produkte absehbar aus dem Sortiment nehmen, weil der Aufwand in keinem vernünftigen Verhältnis zum Ertrag steht.“
+Die Verordnung soll zum 1. Januar 2025 in Kraft treten. Ein Hoffnungsschimmer bleibt den zumeist mittelständischen Herstellern der betroffenen Produkte und dem Handel noch: Der Bundesrat hat mit der Verordnung eine Entschließung verabschiedet, in der die Bundesregierung aufgefordert wird, während der Übergangszeit zu prüfen, ob es verbraucherfreundlichere und unbürokratischere Lösungen gibt.
+ 
+Der Industrieverband Agrar e. V. (IVA) vertritt die Interessen der agrochemischen Industrie in Deutschland. Zu den Geschäftsfeldern der 53 Mitgliedsunternehmen gehören Pflanzenschutz, Pflanzenernährung, Biostimulanzien und Schädlingsbekämpfung. Die vom IVA vertretene Branche steht für innovative Produkte für eine moderne und nachhaltige Landwirtschaft.
+Pressekontakt:
+Industrieverband Agrar e. V., Pressestelle
+Martin May
+Tel. +49 69 2556-1249 oder +49 151 54417692
+Fax +49 69 2556-1298
+E-Mail: may.iva@vci.de
+https://www.iva.de
+https://twitter.com/IVA_Presse
+https://www.linkedin.com/company/industrieverband-agrar-iva
+ </p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/331/">
+										<img src="https://www.frowein808.de/uploads/162263731631.3.jpg" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">02.06.2021</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/331/">Webinar in Zusammenarbeit mit DpS: Insektenmonitoring mit künstlicher Intelligenz</a></h3>
+									<p class="news__moretext">Am 1. Juni 2021 haben DpS und WAINS ein Webinar zum Thema "Insektenmonitoring mit künstlicher Intelligenz" veranstaltet.
+
+
+Um "Insektenmonitoring mit künstlicher Intelligenz" ging es beim Webinar am 1. Juni 2021, das DpS und WAINS veranstaltet haben. In einer halbstündigen Präsentation stellte Business Development Managerin Stefanie Domzig traptice vor. Im Anschluss wurden Fragen beantwortet. Geschäftsführer Steffen König stand für die Fragerunde ebenfalls zur Verfügung.
+Wir haben das Webinar aufgezeichnet. Den Mitschnitt finden Sie hier:
+https://schaedlings.net/news/redaktion/webinar-insektenmonitoring-mit-kuenstlicher-intelligenz/. 
+Bei Fragen zu traptice wenden Sie sich gerne an info@wains.info.
+
+
+ </p>
+								</div>
+							</div>
+				        </div>
+			        			    						        <div class="carousel-item">
+							<div class="col">
+								<div class="img-hover-zoom img-hover-zoom--brightness">
+									<a href="/de/news/330/">
+										<img src="https://www.frowein808.de/uploads/161718340076.56.jpg" class="img-fluid">									</a>
+								</div>
+								<div class="news__card">
+									<label class="pt-2 news__date-details">31.03.2021</label>
+																		<h3 class="pt-1 news__maintitle"><a href="/de/news/330/">Weiterhin bestens für die Zukunft gewappnet – CrefoZert 2021 für Frowein GmbH & Co. KG </a></h3>
+									<p class="news__moretext">Auszeichnung dank hervorragender Bonität
+"Wir möchten damit ein Signal setzen und die finanzielle Zuverlässigkeit gegenüber unseren Partnern und Mitarbeitern mit diesem Zertifikat signalisieren. 
+Die seit einem Jahr andauernde Krise konnte keiner vorhersehen und keiner weiß, wie lange das noch dauert und wie es weitergeht. Umso wichtiger ist nun diese Auszeichnung. Darüber freuen wir uns sehr", so der Geschäftsführer Steffen König. 
+Die Firma Frowein GmbH & Co. KG weist ein ausgezeichnetes Bilanzrating sowie eine hervorragende Bonität auf und erfüllt damit alle Zertifizierungskriterien für das CrefoZert. 
+Eine gute Bonität stärkt die Verhandlungsposition gegenüber Kunden, Lieferanten und Kapitalgebern – allerdings nur, wenn diese auch bekannt ist: Mit CrefoZert erhalten Unternehmen eine Bescheinigung darüber, dass ihr geschäftliches Verhalten einwandfrei ist und die Prognose für die Zukunft positiv. 
+Zertifizierte Unternehmen werden in eine öffentliche Datenbank eingetragen und gehören damit zu den 2% der deutschen Unternehmen, die exklusiv für eine außergewöhnlich gute Bonität ausgezeichnet werden. Mit dem CrefoZert-Logo lässt sich der transparente Umgang mit Finanzen aktiv kommunizieren.</p>
+								</div>
+							</div>
+				        </div>
+			        			    </div>
+			    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+			        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			        <span class="visually-hidden">Previous</span>
+			    </button>
+			    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			        <span class="visually-hidden">Next</span>
+			    </button>
+			</div>
+
+			<div id="carouselMobile" class="carousel slide" data-bs-ride="carousel">
+			   <div class="carousel-inner">
+			    			    							      <div class="carousel-item active">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/342/">
+											<img src="https://www.frowein808.de/uploads/165158535789.19.jpeg" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">08.12.2022</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/342/">WAINS GmbH: Full-Service für digitales Schädlingsmanagement</a></h3>
+										<p class="news__moretext">Unser Tochterunternehmen WAINS GmbH startet durch:Vom KI-basierten Insektenmonitoring traptice® zum digitalen Komplettanbieter - Lösungen für unsere Kunden und für die Branche neu gedacht.Gestartet mit unserem KI-basierten Insektenmonitoring und einer gigantischen Cloud im Rücken, können wir nun mit unserem Portfolio alles anbieten, was unsere Kunden im täglichen Betrieb alles benötigen:Insektenmonitoring, Schadnagerlösungen, Temperaturüberwachung, GPS-Tracking, CO2-Messung, Gerätesteuerung wie bspw. Thermische Öfen u. v. m.Unsere Schadnagerlösung sehen wir derzeit in der Kombination Hard- und Software klar als technologischen Spitzenreiter auf dem Markt:* Einfachste Konfiguration der Falle über NFC mit unserer kostenlosen WAINS App* Senden der Daten über LoRaWAN 1.0.3* über 1 Jahr Batterielaufzeit mit CR2450 Lithium Batterie* Einsatzmöglichkeiten von - 20 °C bis 40 °C* Spritzwasser- und Staubgeschütztes GehäuseUnd wir haben die „Tunnellösung“ wieder zum dem gemacht, für was sie konzipiert wurde.Kombiniert mit unserer Cloud-Lösung unschlagbar:- Berechtigungs-Management für Angestellte und Kunden- Flexible Organisation der Geräte in Gruppen- Möglichkeit einer eigenen Enterprise-Instanz mit kundeneigenem CI- Browserbasiert für PC, Tablet und Smartphone- API-Schnittstelle für externe Systeme- Export der Daten via Excel oder CSV- Anbindung externer Programme per Drag & Drop (bspw. MS-Dynamics, Jira, div. Shopsysteme, u.v.m.) – dadurch sind teils umständliche und kostenintensive Schnittstellenprogrammierungen nicht mehr erforderlich.Alle WAINS-Produkte inkl. unserer Cloud-Lösung stellen wir auf der PEST-PROTECT® vom 11.-12. Mai 2022 auf unserem Stand Nr. E 403 vor. Wir freuen uns darauf!</p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/338/">
+											<img src="https://www.frowein808.de/uploads/164725098555.91.jpeg" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">08.12.2022</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/338/">PEST-PROTECT ® I ARENA Berlin</a></h3>
+										<p class="news__moretext">Wir sind dabei, Sie auch? Alle zwei Jahre präsentiert die PEST-PROTECT® die Highlights aus den Branchen Schädlingsbekämpfung, Desinfektion, Pflanzenschutz und Holz- und Bautenschutz.Auch wir sind natürlich vor Ort vertreten und würden uns über Ihren Besuch freuen! FROWEIN GMBH & CO. KG: Stand D401WAINS GmbH: Stand E403Weitere Informationen erhalten Sie unter https://www.pest-protect.eu/de/ oder direkt bei uns.</p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/333/">
+											<img src="https://www.frowein808.de/uploads/162644135225.01.png" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">08.12.2022</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/333/">Webinar-Zusammenfassung "Insektenmonitoring mit künstlicher Intelligenz"</a></h3>
+										<p class="news__moretext">Am 1. Juni 2021 haben DpS und WAINS ein Webinar zum Thema "Insektenmonitoring mit künstlicher Intelligenz" veranstaltet.Um "Insektenmonitoring mit künstlicher Intelligenz" ging es beim Webinar am 1. Juni 2021, das DpS und WAINS veranstaltet haben. In einer halbstündigen Präsentation stellte Business Development Managerin Stefanie Domzig traptice vor. Im Anschluss wurden Fragen beantwortet. Geschäftsführer Steffen König stand für die Fragerunde ebenfalls zur Verfügung.Die Zusammenfassung des Webinars erschien in der aktuellen DpS-Ausgabe 07 + 08/2021.Lesen Sie gerne mehr dazu im nachfolgenden Bericht unter "Download".</p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/12/">
+											<img src="https://www.frowein808.de/uploads/news_picture_12.jpg" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">08.12.2022</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/12/">EG-Höchstmengen jetzt in Deutschland auch für Futtermittel gültig</a></h3>
+										<p class="news__moretext">Juni 2002Mit der vierten Verordnung zur Änderung futtermittelrechtlicher Verordnungen wurden die EG-Höchstmengen nunmehr in nationales Recht umgesetzt.</p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/340/">
+											<img src="https://www.frowein808.de/uploads/165158539617.59.jpeg" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">03.05.2022</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/340/">PEST-PROTECT ® I ARENA Berlin: Wir sind dabei, Sie auch?</a></h3>
+										<p class="news__moretext">Alle zwei Jahre präsentiert die PEST-PROTECT® die Highlights aus den Branchen Schädlingsbekämpfung, Desinfektion, Pflanzenschutz und Holz- und Bautenschutz.Auch wir sind natürlich vor Ort vertreten und würden uns über Ihren Besuch freuen! Neben der Vorstellung neuer Produkte freuen wir uns auch auf das Gespräch mit Ihnen. > FROWEIN GMBH & CO. KG: Stand D401> WAINS GmbH: Stand E403Weitere Informationen zur Messe erhalten Sie unter https://lnkd.in/dEtn2Cy7 oder direkt bei uns.</p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/339/">
+											<img src="https://www.frowein808.de/uploads/165158541136.61.jpeg" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">03.05.2022</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/339/">Unser neues Logo: Haben Sie’s schon bemerkt?</a></h3>
+										<p class="news__moretext">Wir haben unser Logo einer Erfrischungskur unterzogen. Seit 1934 ist 808 am Markt. Seit 1951 als nationale Marke, dann 1966 als internationales Markenzeichen und seit 2016 als EU-Marke eingetragen. Mittlerweile sind es mehr als 85 Jahre in der damals gängigen 30er-Jahre Typographie. Natürlich werden wir das Logo weiterhin als Marke geschützt lassen – nach so langer Zeit gibt man das nicht einfach her. Für uns war klar, dass wir an 808 festhalten. Früher hat man nicht bei Frowein gearbeitet, sondern bei acht-null-acht. Unsere Kunden kauften nicht bei Frowein, sondern sie kauften bei acht-null-acht. Das neue Logo soll dies unterstreichen und die 808 wieder mehr in den Fokus rücken lassen. Schritt für Schritt werden wir nun alles an das neue Layout anpassen. Bis zum Jahresende sollte alles umgesetzt sein.</p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/334/">
+											<img src="https://www.frowein808.de/uploads/162980015054.16.png" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">24.08.2021</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/334/">Sogar die Küchenschabe geht der Digitalisierung auf den Leim</a></h3>
+										<p class="news__moretext">Albstädter Unternehmen Wains macht Schädlingsbekämpfung internetfähig
+Das Albstädter Start-up Wains, ein Joint Venture des Traditionsunternehmens Frowein und der Digitalschmiede MeetNow!, ist mit seiner digitalen Insektenfalle an den Markt gegangen. Die hört auf den Namen traptice und fängt Schadinsekten – ganz analog mit Klebefolie und Lockstoffen und ganz digital mit Echtzeit-Monitoring, Alarmfunktion und Cloud-Anbindung. Seit Juni 2021 ist das Wains-Produkt marktreif und nach seiner einjährigen Erprobungsphase bereits bei mehreren Dutzend Kunden im Einsatz. Potenzial für traptice sehen die Macher reichlich: Allein in Europa seien für kriechende Insekten mehrere Millionen analoge Fallen aufgestellt, die nur darauf warteten, digitalisiert zu werden.
+Digitales Monitoring schafft Raum und Zeit für neue Chancen
+„Stellen Sie sich vor, Sie sind der Manager eines Fast-Food-Restaurants. Wenn Sie sich darauf verlassen können, dass Sie garantiert als erster wissen, wenn sich eine Schabe in Ihre Küche verirrt hat, haben Sie einen großen Vorteil, und der heißt Zeit. Zeit, um zu verhindern, dass aus einem Schädling hunderte werden, Zeit, um der behördlichen Lebensmittelkontrolle oder Gerüchten in den sozialen Medien zuvorzukommen.“ Damit bringt Steffen König, Geschäftsführer der Wains GmbH, den Nutzen des Produkts auf den Punkt. Zumindest für Endanwender dürfte der Vorteil durch Echtzeit-Monitoring auf der Hand liegen.
+Schädlingsbekämpfern erleichtert die engmaschigere Kontrolle der Fallen die Arbeit, weil sie ihnen viele überflüssige Wege erspart: die turnusmäßige Fallenkontrolle, teils an unzugänglichen Orten und quasi auf Verdacht, ist hinfällig. Das schafft Zeit um bestehende Kunden besser zu beraten oder den Kundenstamm auszubauen. Außerdem, so Wains-Mitgründer und Co-Geschäftsführer Benjamin Ruoff, liefere das digitale Monitoring jede Menge Zusatzdaten: „Sowohl den Befall selbst als auch den Verlauf der Umgebungsfaktoren kann der Schädlingsbekämpfer zeitlich dokumentieren. Das kann bei der Ursachenforschung hilfreich sein.“ Derzeit arbeitet Wains am Wissensvorsprung der Falle: Mithilfe von KI soll traptice zukünftig verraten, auf welchen Namen das erlegte Getier in der Falle hört – auf Deutsch, Englisch, Lateinisch sowie in der Umgangssprache.
+Spezialisten aus der analogen und der digitalen Welt
+Wains ist ein Joint Venture der Albstädter Unternehmen Frowein und MeetNow!. Ersteres ist im Bereich der Schädlingsbekämpfung eine feste Größe; das Unternehmen ist seit 1934 am Markt und entwickelt, produziert und vertreibt Schädlingsfallen und Biozide. MeetNow! kommt von der digitalen Seite. Zu den Leistungen des Unternehmens gehören Strategien und Geschäftsmodelle für die digitale Transformation. Auch die notwendige Technologie sowie Soft- und Hardware entwickelt MeetNow. Bei den traptice-Fallen von Wains sorgt das Digitalunternehmen für Sensoren, Kameras und eine digitale Sendeeinheit, die es vom Prototyp bis zum fertigen Serienprodukt entwickelt hat. Darüber werden Daten und Aufnahmen – entsprechend verschlüsselt – an die Cloud gesendet, wo sie für Schädlingsbekämpfer und Kunden jederzeit abrufbar sind. Daneben hat sich MeetNow! um die Website, das Branding, das gesamte Online-Marketing und die Marketing Automatisierung gekümmert.
+Benjamin Ruoff, der neben Wains auch MeetNow! vorsteht, erklärt, wie es zum Joint Venture kam: „Beide Seiten wollten ihr originäres Geschäftsmodell ausbauen, die analoge Welt mit der digitalen verbinden. Nachdem wir die Idee entwickelt hatten, war klar, dass wir nicht nur auf Projektebene zusammenarbeiten wollen. Wir beide allein könnten auch keine Millioneninvestition stemmen. Gemeinsam, und zusammen mit Kapitalgebern, haben wir viel mehr Möglichkeiten.“
+Positive Marktaussichten für digitale Insektenfalle und digitale Wissensvermittlung
+Mit den Ergebnissen des jungen Unternehmens sind Steffen König und Benjamin Ruoff zufrieden. Das Feedback der Testkunden sei gut, neue Anfragen erreichten das Unternehmen stetig. Die Wains-Macher überrascht das nicht. Sie sehen viel Potenzial für traptice: Allein in Europa gebe es mehrere Millionen – analoge – Fallen für kriechende Insekten.
+Neben dem digitalen Insektenfang hat Wains außerdem eine wachsende Nachfrage im Bereich Know-how identifiziert. Steffen König: „In Deutschland ist der Schädlingsbekämpfer ein Ausbildungsberuf, aber das ist in den wenigsten Regionen der Welt der Fall. Wer sich als ‚Pest Controller‘ selbstständig macht, muss sich die nötige Kompetenz selbst aneignen. Neben der digitalen Insektenfalle wollen wir diesen Leuten zukünftig eine Wissensdatenbank bieten.“
+Über die Wains GmbH
+Das Joint Venture WAINS GmbH konzentriert sich auf die digitale Schädlingsbekämpfung. Gegründet wurde das Unternehmen im Jahr 2020 von Experten für Schädlingsbekämpfung und IT, deren Know-how und Erfahrung in das Unternehmen einfließt. Ziel von Wains ist es, die Bekämpfung von Insektenschädlingen zu revolutionieren. Mit den traptice® Fallen liefert das Unternehmen ein neues Konzept zur digitalen Überwachung von Insekten- und Nagetierschädlingen, das Schädlingsbekämpfer und ihre Kunden in der Industrie, Pharmazie, Gastgewerbe, Gastronomie und weiteren Branchen unterstützt.</p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/332/">
+											<img src="https://www.frowein808.de/uploads/no-photo.png" class="img-fluid no-photo-carousel">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">30.06.2021</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/332/">Pressemitteilung des IVA:  Biozid-Verordnung - Überregulierung  im nationalen Alleingang</a></h3>
+										<p class="news__moretext">Vom Bundesrat verabschiedete Verordnung bevormundet Verbraucher und gefährdet Existenz mittelständischer Hersteller
+(Frankfurt a. M., 28. Juni 2021)  Das am 25. Juni 2021 vom Bundesrat beschlossene Selbstbedienungsverbot für Produkte wie Mückensprays, Mottenpapiere oder Ameisenköder ist nach Ansicht des Industrieverbands Agrar e. V. (IVA) ein überflüssiger und sogar schädlicher nationaler Alleingang. Die betroffenen Mittel sind im Rahmen der geltenden EU-Biozidprodukte-Verordnung bereits streng reguliert. Die EU-Verordnung bezeichnet sie ausdrücklich als „notwendig“, um Organismen zu bekämpfen, die der menschlichen oder tierischen Gesundheit schaden können.
+Viele Biozid-Produkte haben sich seit Jahrzehnten in Millionen Haushalten bewährt. Mit der nun verabschiedeten Verordnung wird Verbrauchern künftig der Zugang zu diesen haushaltsüblichen Produkten deutlich erschwert. Der stationäre wie auch der Online-Handel dürfen solche Biozide dann nur noch nach ausführlicher Beratung durch eigens geschulte Verkäufer abgeben.
+„Warum nur in Deutschland Verbraucher auf einmal nicht mehr in der Lage sein sollen, trotz der ausführlichen Packungsbeilagen mit den Produkten verantwortungsvoll umzugehen, bleibt das Geheimnis des Gesetzgebers“, kritisiert IVA-Geschäftsführer Martin May. Er verweist außerdem auf den extrem hohen finanziellen und administrativen Aufwand, der in Form von Investitionen für abschließbare Schränke und Mitarbeiterschulungen auf den Handel zukommt: „Unter diesen Umständen werden Supermärkte und Drogerien die Produkte absehbar aus dem Sortiment nehmen, weil der Aufwand in keinem vernünftigen Verhältnis zum Ertrag steht.“
+Die Verordnung soll zum 1. Januar 2025 in Kraft treten. Ein Hoffnungsschimmer bleibt den zumeist mittelständischen Herstellern der betroffenen Produkte und dem Handel noch: Der Bundesrat hat mit der Verordnung eine Entschließung verabschiedet, in der die Bundesregierung aufgefordert wird, während der Übergangszeit zu prüfen, ob es verbraucherfreundlichere und unbürokratischere Lösungen gibt.
+ 
+Der Industrieverband Agrar e. V. (IVA) vertritt die Interessen der agrochemischen Industrie in Deutschland. Zu den Geschäftsfeldern der 53 Mitgliedsunternehmen gehören Pflanzenschutz, Pflanzenernährung, Biostimulanzien und Schädlingsbekämpfung. Die vom IVA vertretene Branche steht für innovative Produkte für eine moderne und nachhaltige Landwirtschaft.
+Pressekontakt:
+Industrieverband Agrar e. V., Pressestelle
+Martin May
+Tel. +49 69 2556-1249 oder +49 151 54417692
+Fax +49 69 2556-1298
+E-Mail: may.iva@vci.de
+https://www.iva.de
+https://twitter.com/IVA_Presse
+https://www.linkedin.com/company/industrieverband-agrar-iva
+ </p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/331/">
+											<img src="https://www.frowein808.de/uploads/162263731631.3.jpg" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">02.06.2021</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/331/">Webinar in Zusammenarbeit mit DpS: Insektenmonitoring mit künstlicher Intelligenz</a></h3>
+										<p class="news__moretext">Am 1. Juni 2021 haben DpS und WAINS ein Webinar zum Thema "Insektenmonitoring mit künstlicher Intelligenz" veranstaltet.
+
+
+Um "Insektenmonitoring mit künstlicher Intelligenz" ging es beim Webinar am 1. Juni 2021, das DpS und WAINS veranstaltet haben. In einer halbstündigen Präsentation stellte Business Development Managerin Stefanie Domzig traptice vor. Im Anschluss wurden Fragen beantwortet. Geschäftsführer Steffen König stand für die Fragerunde ebenfalls zur Verfügung.
+Wir haben das Webinar aufgezeichnet. Den Mitschnitt finden Sie hier:
+https://schaedlings.net/news/redaktion/webinar-insektenmonitoring-mit-kuenstlicher-intelligenz/. 
+Bei Fragen zu traptice wenden Sie sich gerne an info@wains.info.
+
+
+ </p>
+									</div>
+								</div>
+					      </div>
+			      			    							      <div class="carousel-item ">
+								<div class="col">
+									<div class="img-hover-zoom img-hover-zoom--brightness">
+										<a href="/de/news/330/">
+											<img src="https://www.frowein808.de/uploads/161718340076.56.jpg" class="img-fluid">										</a>
+									</div>
+									<div class="news__card">
+										<label class="pt-2 news__date-details">31.03.2021</label>
+																				<h3 class="pt-1 news__maintitle"><a href="/de/news/330/">Weiterhin bestens für die Zukunft gewappnet – CrefoZert 2021 für Frowein GmbH & Co. KG </a></h3>
+										<p class="news__moretext">Auszeichnung dank hervorragender Bonität
+"Wir möchten damit ein Signal setzen und die finanzielle Zuverlässigkeit gegenüber unseren Partnern und Mitarbeitern mit diesem Zertifikat signalisieren. 
+Die seit einem Jahr andauernde Krise konnte keiner vorhersehen und keiner weiß, wie lange das noch dauert und wie es weitergeht. Umso wichtiger ist nun diese Auszeichnung. Darüber freuen wir uns sehr", so der Geschäftsführer Steffen König. 
+Die Firma Frowein GmbH & Co. KG weist ein ausgezeichnetes Bilanzrating sowie eine hervorragende Bonität auf und erfüllt damit alle Zertifizierungskriterien für das CrefoZert. 
+Eine gute Bonität stärkt die Verhandlungsposition gegenüber Kunden, Lieferanten und Kapitalgebern – allerdings nur, wenn diese auch bekannt ist: Mit CrefoZert erhalten Unternehmen eine Bescheinigung darüber, dass ihr geschäftliches Verhalten einwandfrei ist und die Prognose für die Zukunft positiv. 
+Zertifizierte Unternehmen werden in eine öffentliche Datenbank eingetragen und gehören damit zu den 2% der deutschen Unternehmen, die exklusiv für eine außergewöhnlich gute Bonität ausgezeichnet werden. Mit dem CrefoZert-Logo lässt sich der transparente Umgang mit Finanzen aktiv kommunizieren.</p>
+									</div>
+								</div>
+					      </div>
+			      			   </div>
+			   <!-- Left and right controls/icons -->
+			   <button class="carousel-control-prev ms-3" type="button" data-bs-target="#demo" data-bs-slide="prev">
+			   <span class="carousel-control-prev-icon"></span>
+			   </button>
+			   <button class="carousel-control-next me-3" type="button" data-bs-target="#demo" data-bs-slide="next">
+			   <span class="carousel-control-next-icon"></span>
+			   </button>
+			</div>
+
+	    </div>
+	</div>
+</div>
+<div class="main-content">
+	<div class="container">
+		<div class="row">
+
+			
+			
+
+			<div class="col-md-6 col-sm-12 col-12">
+				<h2 class="newsletter-title">Newsletter</h2>
+				<p class="newsletter-descr">Damit Sie immer auf dem Laufenden sind und über aktuelle Themen informiert werden: Unser Newsletter erscheint hierzu in unregelmäßigen Abständen.</p>
+			</div>
+			<div class="col-md-6 col-sm-12 col-12 n-form">
+
+				<div class="input-group"> <!-- change form tag to div -->
+					<div class="input-group flex-nowrap mb-0">
+						<span class="input-group-text rounded-0 shadow-none bg-body border-end-0" id="addonIcon"><img src="/images/svg/inputemail.svg"></span>
+						<input type="email" class="form-control rounded-0 shadow-none border-start-0" name="newsletter-email" placeholder="Ihre E-Mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+						
+						<input name="send-newsletter" data-bs-toggle="modal" data-bs-target="#newsletterSubscribeModal" class="btn btn-outline-secondary rounded-0 shadow-none" type="submit" value="Jetzt abonnieren">
+					</div>
+					<span class="preTitleSub">Um sich aus dem Newsletter auszutragen klicken Sie bitte <a href='/' data-bs-toggle='modal' data-bs-target='#newsletterUnsubscribeModal'>hier</a>.</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer mt-auto">
+	<div class="basicFooter">
+		<div class="container">
+		   <div class="f-logo foo-item">
+		      <div class="logo-text logo-pb">
+		         Eingetragenes Warenzeichen		      </div>
+		      <div class="f-img" id="left_float-logo">
+		         <div class="logo-img">
+		            <img src="/images/svg/image-000 2.svg">
+		         </div>
+		      </div>
+
+		   </div>
+		   <div class="f-adress foo-item">
+		   	  <h2 class="title-address">Kontakt</h2>
+
+		      <div class="logo-text">
+		         Frowein<br>GmbH & CO. KG
+		      </div>
+
+		      <div class="ad">Am Reislebach 83</div>
+		      <div class="ad">D-72461 Albstadt</div>
+		      <div class="ad pt-ad"><a href="https://www.frowein808.de/de" target="_blank">www.frowein808.de</a></div>
+		   </div>
+		   <div class="f-cont foo-item">
+		   		<h2 class="title-cont">Info</h2>
+		   		<ul class="cont_list">
+		   			<li><a href="/de/agb/">AGB</a></li>
+                    <!--
+		   			<li><a href="/" data-bs-toggle="modal" data-bs-target="#cookiesDataModal">Cookies</a></li>
+		   			-->
+		   			<li><a  id="changePreferences" class="changePreferences">Cookies</a></li>
+		   			<li><a href="/de/impressum/">Impressum</a></li>
+		   			<li><a href="/de/datenschutz/">Datenschutz</a></li>
+		   			<li><a href="/de/contact/">Kontakt</a></li>
+		   		</ul>
+		   </div>
+		   <div class="f-adress foo-item">
+		   		<h2 class="title-nav">Navigation</h2>
+		   		<ul class="cont_list">
+		   			<li><a href="/de/">Startseite</a></li>
+		   			<li><a href="/de/about/">Unternehmen</a></li>
+		   			<li><a href="/de/products/">Produkte</a></li>
+		   			<li><a href="/de/news/">Aktuelles</a></li>
+		   			<li><a href="/de/anmeldung/">Newsletter</a></li>
+		   		</ul>
+		   </div>
+		   <div class="f-follow foo-item">
+		   		<h2 class="title-followus-f">Folge uns</h2>
+				<div class="social">
+				   <a href="http://www.facebook.com/frowein808" class="facebook-link" target="_blank">
+
+				   </a>
+				   <a href="http://www.youtube.com/user/FroweinGmbH?feature=mhum" class="youtube-link" target="_blank">
+
+				   </a>
+				   <a href="http://www.linkedin.com/company/frowein-gmbh-&-co-kg?trk=hb_tab_compy_id_2876431" class="linkedin-link" target="_blank">
+				   </a>
+				</div>
+		   		<img src="/images/svg/cepa 1.svg" class="d-none cepa-mo">
+		   </div>
+		   <div class="cepa foo-item">
+		      <div class="cepa-logo">
+		         <img src="/images/svg/cepa 1.svg">
+		      </div>
+		   </div>
+		</div>
+	</div>
+    <div class="bottomFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 col-12 items_top">
+                  <div class="container paddingZero">
+                    <div class="row fullWidth">
+                        <div class="col-md-3 col-sm-12 col-12 supportRight">
+                          <a href="/de/support/" class="support-link"><img src="/images/svg/support icon.svg">Kontaktformular</a>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-12 tel">
+                          <a href="tel:+49 7432 956-0" class="tel-link"><img src="/images/svg/tel.svg">+49 7432 956-0</a>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-12 email">
+                          <a href="mailto:info@frowein808.de" class="email-link"><img src="/images/svg/mail.svg">info@frowein808.de</a>
+                        </div>
+                    </div> 
+
+
+                <div class="d-md-none col-sm-12 col-12">
+                    <img class="w-100" src="/images/svg/moLinesFooter.svg">
+                </div>
+
+                  </div>
+                </div> 
+                <div class="col-md-5 col-sm-12 col-12 hideLines">
+                    <img id="footer_right" src="/images/svg/lines.svg">
+                </div> 
+            </div>
+        </div>
+    </div>
+
+<!-- Newsletter Sunscribe Data Modal -->
+<div class="modal fade" id="newsletterSubscribeModal" tabindex="-1" aria-labelledby="newsletterSubscribeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content px-5 py-4" id="unsubModal">
+      <div class="modal-header pb-0" id="noBottomLine">
+        <h2 class="newsletter-unsub mb-0">Newsletter anmelden</h2>
+        <button type="button" class="btn-close" id="nCloseButton" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      	<p class="newsletter_unsub_text mb-0">In dem Wort Newsletter steckt das Wort „Letter“= Brief. Unser Qualitätsanspruch ist es daher, Sie in unseren Newslettern direkt und personalisiert anzusprechen. Aus diesem Grund benötigen wir neben Ihrer E-Mail-Adresse auch Ihren Namen.</p>
+      	
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Newsletter Unsubscribe Data Modal -->
+<div class="modal fade" id="newsletterUnsubscribeModal" tabindex="-1" aria-labelledby="newsletterUnsubscribeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content px-5 py-4" id="unsubModal">
+      <div class="modal-header pb-0" id="noBottomLine">
+        <h2 class="newsletter-unsub mb-0">Newsletter abmelden</h2>
+        <button type="button" class="btn-close" id="nCloseButton" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      	<p class="newsletter_unsub_text mb-0"></p>
+      	<div class="abmeldenMessage"></div>
+
+		
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cookies Data Modal -->
+<div class="modal fade" id="cookiesDataModal" tabindex="-1" aria-labelledby="cookiesDataLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title m-auto py-2" id="cookiesDataLabel">Cookie Instellungen</h5>
+        <button type="button" class="btn-close" id="nCloseButton" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+      	<div class="container-fluid">
+      		<div class="row">
+      			<div class="col-md-3 col-sm-12 col-12 border-end px-0 bg-grey-color">
+      				<div class="bg_left-side">
+						<div class="list-group list-group-flush">
+						  <a class="list-group-item list-group-item-action py-075 ps-4 active" data-value="cookie1">
+						    Ihre Privatsphare
+						  </a>
+						  <a class="list-group-item list-group-item-action py-075 ps-4" data-value="cookie2">Unverzichtbare Cookies</a>
+						  <a class="list-group-item list-group-item-action py-075 ps-4" data-value="cookie3">Marketing Und Re-Targeting.</a>
+						  <a class="list-group-item list-group-item-action py-075 ps-4" data-value="cookie4">Datenanalyse Und Statistiken</a>
+						</div>
+      				</div>
+      			</div>
+      			<div class="col-md-9 col-sm-12 col-12">
+      				<div class="bg_main-content py-075 px-5 mb-5" id="cookie1">
+      					<h2 class="bg_cookie-title pb-3 pt-3">Ihre Privatsphäre ist uns wichtig</h2>
+      					<p class="bg_cookie-content">Cookies sind sehr kleine Textdateien, die auf Ihrem Rechner gespeichert werden, wenn Sie eine Website besuchen. Wir verwenden Cookies für eine Reihe von Auswertungen, um damit Ihren Besuch auf unserer Website kontinuierlich zu verbessern zu können (z. B. damit Ihnen Ihre Login-Daten erhalten bleiben).</p>
+      					<p class="bg_cookie-content">Sie können Ihre Einstellungen ändern und verschiedenen Arten von Cookies erlauben, auf Ihrem Rechner gespeichert zu werden, während Sie unsere Webseite besuchen. Sie können auf Ihrem Rechner gespeicherte Cookies ebenso weitgehend wieder entfernen. Bitte bedenken Sie aber, dass dadurch Teile unserer Website möglicherweise nicht mehr in der gedachten Art und Weise nutzbar sind.</p>
+      					<p class="bg_cookie-content">Details zu den Cookies jeder Gruppe, deren Zweck und Dienste von Drittanbietern können Sie im Cookie-Richtlinie erfahren.</p>
+      					<div class="text-end pb-3">
+      						<button type="button" class="btn_cookie mt-5">Einstellungen speichern</button>
+      					</div>
+      				</div>
+      				<div class="bg_main-content py-075 px-5 mb-5" id="cookie2">
+      					<h2 class="bg_cookie-title pb-3 pt-3">Unverzichtbare Cookies</h2>
+      					<p class="bg_cookie-content">Diese Cookies sind für das vollständige Funktionieren der Website <a href="#">www.frowein808.de</a> erforderlich und können nicht abgeschaltet werden. Sie enthalten die Einstellungen, die Sie für sich auf der Website <a href="#">www.frowein808.de</a> vorgenommen haben, also bspw. Sprache, Währung, Login-Sitzung (um zwischen Seitenwechseln eingeloggt zu bleiben), Privatsphäreneinstellungen.</p>
+						<div class="form-check form-switch">
+							<input class="form-check-input cookieSwitcher1" type="checkbox" role="switch" id="cookieSwitcher" checked>
+							<label class="form-check-label ps-2" for="cookieSwitcher">Immer aktiv</label>
+						</div>
+      					<div class="text-end pb-3">
+      						<button type="button" class="btn_cookie mt-5">Einstellungen speichern</button>
+      					</div>
+      				</div>
+      				<div class="bg_main-content py-075 px-5 mb-5" id="cookie3">
+      					<h2 class="bg_cookie-title pb-3 pt-3">Marketing Und Re-Targeting</h2>
+      					<p class="bg_cookie-content">Mit diesen Cookies erfassen wir die Besuchsstatistiken der Website <a href="#">www.frowein808.de</a>, also bspw. welche Artikel wie oft angeklickt und anschließend gekauft wurden. Die Analyse dieser Daten hilft uns, das Warenangebot unserer Website <a href="#">www.frowein808.de</a> besser den Kundenwünschen anzupassen.</p>
+						<div class="form-check form-switch">
+							<input class="form-check-input" type="checkbox" role="switch" id="cookieSwitcher" checked>
+							<label class="form-check-label ps-2" for="cookieSwitcher">Aktiv</label>
+						</div>
+      					<div class="text-end pb-3">
+      						<button type="button" class="btn_cookie mt-5">Einstellungen speichern</button>
+      					</div>
+      				</div>
+      				<div class="bg_main-content py-075 px-5 mb-5" id="cookie4">
+      					<h2 class="bg_cookie-title pb-3 pt-3">Datenanalyse Und Statistiken</h2>
+      					<p class="bg_cookie-content">Die Analyse dieser Daten hilft uns, das Warenangebot unserer Website <a href="#">www.frowein808.de</a> besser den Kundenwünschen anzupassen.</p>
+						<div class="form-check form-switch">
+							<input class="form-check-input cookieSwitcher3" type="checkbox" role="switch" id="cookieSwitcher" checked>
+							<label class="form-check-label ps-2" for="cookieSwitcher">Aktiv</label>
+						</div>
+      					<div class="text-end pb-3">
+      						<button type="button" class="btn_cookie mt-5">Einstellungen speichern</button>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</footer>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+
+    $(".cap_refresh").on("click", function(){
+        d = new Date();
+        $(".capcap").attr("src", "https://frowein808.de/captcha/code_math.php?"+d.getTime());
+    });
+
+	// ABMELDEN FORM (UNSUBSCRIBE)
+	$(".pAbmeldenForm").submit(function(e) {
+	    e.preventDefault();
+
+	    var form = $(this);
+	    var actionUrl = form.attr('action');
+	    
+	    $.ajax({
+	        type: "POST",
+	        url: actionUrl,
+	        data: form.serialize(),
+	        success: function(data)
+	        {
+	        	if(data) {
+	        		$('.abmeldenMessage').html(data);
+	        	}
+	        }
+	    });
+	});
+
+	// ANMELDEN FORM
+	$(".pAnmeldenForm").submit(function(e) {
+	    e.preventDefault();
+
+	    var form = $(this);
+	    var actionUrl = form.attr('action');
+	    
+	    $.ajax({
+	        type: "POST",
+	        url: actionUrl,
+	        data: form.serialize(),
+	        success: function(data)
+	        {
+	        	if(data) {
+	        		$('.anmeldenMessage').html(data);
+	        	}
+	        }
+	    });
+	});
+
+	$('input[name="newsletter-email"]').blur(function()
+	{
+	    if( $(this).val() ) {
+	        $('input[name="newsletter-pemail"]').val( $('input[name="newsletter-email"]').val() );
+	    } else {
+	    	$('input[name="newsletter-pemail"]').val('');
+	    }
+	});
+
+	var cookieContainer = $('#cookiesDataModal .modal-content .modal-body .container-fluid');
+	var cookieListHeight = $('#cookiesDataModal .modal-content .modal-body .container-fluid .row .bg-grey-color');
+	$('#cookiesDataModal').on('shown.bs.modal', function(){
+		var modalDialogHeight = cookieContainer.height();
+		cookieContainer.height(modalDialogHeight);
+		cookieListHeight.height(modalDialogHeight);
+	});
+
+	$('.btn_cookie').click(function() {
+	    $('#cookiesDataModal').modal('hide');
+	});
+
+	$('#cookie2, #cookie3, #cookie4').hide();
+	$('.bg_left-side .list-group a').click(function(eventDefault) {
+		var cookieValue = eventDefault.target.attributes[1].value;
+		$("#" + cookieValue).show().siblings().hide();
+	    $('.list-group a').removeClass("active");
+	    $(this).addClass("active");
+	});
+});
+
+jQuery(document).ready(function($) {
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+	    var forms = document.getElementsByClassName('needs-validation');
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	      form.addEventListener('submit', function(event) {
+	        if (!form.checkValidity()) {
+	          event.preventDefault();
+	          event.stopPropagation();
+	          $('.newsletter-form div.t').addClass('pos-icon_mail');
+	        } 
+	        
+	        form.classList.add('was-validated');
+	      }, false);
+	    });
+	  }, false);
+	})();
+
+
+});
+</script>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        cookieconsent.run({
+            notice_banner_type:'interstitial',
+            consent_type:'express',
+            palette:'light',
+            change_preferences_selector:'#changePreferences',
+            language:'de',
+            website_name:'www.frowein808.de',
+            cookies_policy_url:'/datenschutz/'
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    var $ = jQuery;
+    $(document).ready(function(){
+
+        function getCookie(name){
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; ", +prefix);
+            if(begin == -1) {
+                begin = dc.indexOf(prefix);
+                if(begin !=0) return null;
+            } else {
+                begin +=2;
+                var end = document.cookie.indexOf(';', begin);
+                if(end == -1){
+                    end = dc.length;
+                }
+            }
+            return decode.uri(dc.substring(begin + prefix.length, end));
+        }
+        function getCookieNew(name) {
+            var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+            return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+        var cook = getCookieNew("cookie_consent_level");
+         var obj = jQuery.parseJSON( cook );
+        console.log( obj);
+        console.log("cook cookie_consent_level strictly-necessary= "+obj['strictly-necessary']);
+        console.log("cook cookie_consent_level functionality = "+obj['functionality']);
+        console.log("cook cookie_consent_level tracking= "+obj['tracking']);
+        console.log("cook cookie_consent_level targeting= "+obj['targeting']);
+
+        $("#strictly-necessary").prop("disabled" , true);
+        $(document).delegate("#changePreferences", "click", function(){
+            if(obj['functionality'] === true ){
+                setTimeout(function(){
+                    $("#functionality").prop("checked" , true);
+                }, 300);
+            }
+            if(obj['targeting'] === true ){
+                setTimeout(function(){
+                    $("#targeting").prop("checked" , true);
+                }, 300);
+            }
+            if(obj['tracking'] === true ){
+                setTimeout(function(){
+                    $("#tracking").prop("checked" , true);
+                }, 300);
+            }
+        });
+    });
+
+    $(document).delegate("._brlbs-btn", 'click', function(){
+        if($(this).parent().next().find('input[name=unblockAll]').prop('checked') === true){
+            var date = new Date();
+            date.setTime(date.getTime()+(60*24*60*60*1000));
+            var expires = " expires="+date.toGMTString();
+            document.cookie = "cookie_consent_level = %7B%22strictly-necessary%22%3Atrue%2C%22functionality%22%3Atrue%2C%22tracking%22%3Afalse%2C%22targeting%22%3Afalse%7D; path=/;" + expires;
+            location.reload();
+        } else {
+            document.cookie = "cookie_consent_level = strictly-necessary=true&functionality=false&tracking=false&targeting=false; path=/;" + expires;
+        }
+    });
+
+    $(document).delegate('#accept_all', 'click', function(){
+        $("#functionality1").prop("checked", "checked");
+        $("#tracking1").prop("checked", "checked");
+        var date = new Date();
+        var str = '';
+        date.setTime(date.getTime()+(60*24*60*60*1000));
+        var expires = " expires="+date.toGMTString();
+        str = "cookie_consent_level = %7B%22strictly-necessary%22%3Atrue%2C%22functionality%22%3Atrue%2C%22tracking%22%3Atrue%2C%22targeting%22%3Atrue%7D; path=/;" + expires;
+        document.cookie = "cookie_consent_level = %7B%22strictly-necessary%22%3Atrue%2C%22functionality%22%3Atrue%2C%22tracking%22%3Atrue%2C%22targeting%22%3Atrue%7D; path=/;" + expires;
+        document.cookie = "cookie_consent_user_accepted = true; path=/;" + expires;
+
+        $.ajax({
+            type: 'POST',
+            url: '/ajax.php',
+            data: "cookie_stats=true&cookie_str="+str,
+            success: function(result) {
+                location.reload();
+            },
+            error:  function(xhr, str){
+
+            }
+        });
+
+    });
+    $(document).delegate(".cc_cp_f_save button", 'click', function(){
+        if($('#functionality').prop('checked') === true){
+            var date = new Date();
+            date.setTime(date.getTime()+(60*24*60*60*1000));
+            var expires = " expires="+date.toGMTString();
+            document.cookie = "cookie_consent_level = %7B%22strictly-necessary%22%3Atrue%2C%22functionality%22%3Atrue%2C%22tracking%22%3Afalse%2C%22targeting%22%3Afalse%7D; path=/;" + expires;
+            var str = "cookie_consent_level = %7B%22strictly-necessary%22%3Atrue%2C%22functionality%22%3Atrue%2C%22tracking%22%3Afalse%2C%22targeting%22%3Afalse%7D; path=/;" + expires;
+            $.ajax({
+                type: 'POST',
+                url: '/ajax.php',
+                data: "cookie_stats=true&cookie_str="+str,
+                success: function(result) {
+                    location.reload();
+                },
+                error:  function(xhr, str){
+
+                }
+            });
+        }
+    });
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow:
+
+Host: www.frowein808.de
+Sitemap: https://www.frowein808.de/sitemap.xml

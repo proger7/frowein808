@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^sitemap.xml$ fus.php?xml=sitemap
+RewriteRule ^(.*)/$ fus.php?title=$1 [QSA]
+</IfModule>

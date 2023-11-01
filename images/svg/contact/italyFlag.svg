@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 31" width="30" height="31">
+	<title>Group 7</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m5 6h20v20h-20z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #f0f0f0 } 
+		.s1 { fill: #d80027 } 
+		.s2 { fill: #6da544 } 
+	</style>
+	<g id="Group 7" clip-path="url(#cp1)">
+		<path id="Vector" class="s0" d="m30 15.5c0 8.2-6.7 14.9-14.9 14.9-8.2 0-14.9-6.7-14.9-14.9 0-8.2 6.7-14.9 14.9-14.9 8.2 0 14.9 6.7 14.9 14.9z"/>
+		<path id="Vector" class="s1" d="m30 15.5c0 6.4-4 11.9-9.7 14v-28c5.7 2.1 9.7 7.6 9.7 14z"/>
+		<path id="Vector" class="s2" d="m9.9 1.5v28c-5.7-2.1-9.7-7.6-9.7-14 0-6.4 4-11.9 9.7-14z"/>
+	</g>
+</svg>

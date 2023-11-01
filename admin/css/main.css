@@ -1,0 +1,475 @@
+
+
+.slot{
+	background: none repeat scroll 0 0 #D2D9E9;
+    cursor: pointer;
+    float: left;
+	color:#29537e;
+    font-size: 12px;
+    font-weight: 300;
+    height: 66px;
+    margin: 10px 10px 10px 0;
+    padding: 25px 40px 25px 23px;
+    text-align: left;
+    width: 460px;
+	text-transform:uppercase;
+}
+.slot span{
+	/* margin-right:35px; */
+	color:#29537e;
+	text-transform:none;
+}
+.block_slot{
+	background: url('../../style/images/lock.png') no-repeat center center;
+    cursor: pointer;
+    height: 64px;
+    margin: 8px 0 0 477px;
+    position: absolute;
+    width: 25px;
+    z-index: 99;
+}
+.discard_slot{
+	background: url('../../style/images/discard.png') no-repeat center center;
+    cursor: pointer;
+    height: 64px;
+    margin: 8px 0 0 425px;
+    position: absolute;
+    width: 25px;
+    z-index: 99;
+}
+.unblock_slot{
+	background: url('../../style/images/unlock.png') no-repeat center 10px;
+    border-radius: 0 5px 0 0;
+    cursor: pointer;
+    height: 64px;
+    margin: 18px 0 0 477px;
+    position: absolute;
+    width: 26px;
+    z-index: 99;
+}
+.slot_container {
+	
+    float: left;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+#users_list{
+	padding:25px;
+}
+#users_list a {
+	clear: both;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+}
+.blocked{
+	background:#d56c68;
+}
+.requested {
+	background:#e9e7d2;
+	color:#7e7129;
+}
+.requested span{
+	color:#7e7129;
+}
+.confirm_request{	
+	cursor: pointer;
+	height: 32px;
+	margin: 15px 0 0 453px;
+	position: absolute;
+	width: 26px;
+	z-index: 99;
+}
+.discard_request{	
+	cursor: pointer;
+	height: 32px;
+	margin: 49px 0 0 453px;
+	position: absolute;
+	width: 26px;
+	z-index: 99;
+}
+.confirmed{
+	background:#5f9e92;
+	color:#fff;
+}
+
+
+.text_div{
+	 clear: both;
+    display: block;
+	overflow:hidden;
+}
+.htooltip div { /* Внешний вид нашего тултипа */
+    background: #f0f0f0;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: #000;
+    margin-left: 2px;
+    margin-top: -75px;
+    opacity: 0; /* Делаем его прозрачным */
+    padding: 10px 10px 10px 40px;
+    position: absolute;
+    text-decoration: none;
+    visibility: hidden; /* И прячем */
+    width: 350px;
+    z-index: 10;
+}
+.htooltip div span{
+	color:#000;
+	text-transform:none;
+}
+        
+.htooltip:hover div { /* По hover отображаем тултип */
+    opacity: 1;
+    visibility: visible;
+}
+.htooltip a{
+	#color:#fff;
+}
+        
+.invite_text {
+	float: left;
+    margin: 0 0 0 30px;
+    padding: 10px;
+    text-align: center;
+    width: 230px;
+}
+.photo{
+	display: block !important;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    text-align: right;
+}
+
+.firma {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    box-shadow: none !important;
+    margin-left: 35px !important;
+    margin-top: -24px !important;
+    opacity: 1 !important;
+    position: relative !important;
+    visibility: visible !important;
+    z-index: 1 !important;
+	width:auto !important;
+}
+.clearfix{
+	clear:both;
+}
+
+.answer_div{
+	padding:30px 15px 15px;
+	text-align:center;
+}
+.answer_div textarea{
+	width:320px;
+	height:100px;
+	padding:10px;
+	border:1px solid #ccc;
+} 
+#sendEmails{
+	margin-top:-140px;
+	position:absolute;
+} 
+.confirmed span{
+	color:#fff;
+}
+.container label{
+	display:inline;
+}
+.blocked span{
+color:#fff;
+}
+.addlocation{
+	cursor:POINTER;
+	color:#004f8d;
+}
+.addlocation:hover{
+	text-decoration:underline;
+}
+.levels_ul:nth-child(1){
+	display:block !important;
+}
+.bonsai,
+.bonsai li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.bonsai li {
+  position: relative;
+  padding-left: 1.3em; /* padding for the thumb */
+  padding-top:7px;
+}
+
+li .thumb {
+  margin: -1px 0 0 -1em; /* negative margin into the padding of the li */
+  position: absolute;
+  cursor: pointer;
+}
+
+li.has-children > .thumb:after {
+  content: '?';
+}
+
+li.has-children.expanded > .thumb:after {
+  content: '?';
+}
+
+li.collapsed > ol.bonsai {
+  height: 0;
+  overflow: hidden;
+}
+
+.bonsai .all,
+.bonsai .none {
+  cursor: pointer;
+}
+
+li.has-children > .thumb {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNMTg0LjcsNDEzLjFsMi4xLTEuOGwxNTYuNS0xMzZjNS4zLTQuNiw4LjYtMTEuNSw4LjYtMTkuMmMwLTcuNy0zLjQtMTQuNi04LjYtMTkuMkwxODcuMSwxMDFsLTIuNi0yLjMNCglDMTgyLDk3LDE3OSw5NiwxNzUuOCw5NmMtOC43LDAtMTUuOCw3LjQtMTUuOCwxNi42aDB2Mjg2LjhoMGMwLDkuMiw3LjEsMTYuNiwxNS44LDE2LjZDMTc5LjEsNDE2LDE4Mi4yLDQxNC45LDE4NC43LDQxMy4xeiIvPg0KPC9zdmc+DQo=');
+  width: 12px;
+  height: 12px;
+  background-size: 100%;
+  margin-top: 6px;
+}
+li.has-children.expanded > .thumb {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNOTguOSwxODQuN2wxLjgsMi4xbDEzNiwxNTYuNWM0LjYsNS4zLDExLjUsOC42LDE5LjIsOC42YzcuNywwLDE0LjYtMy40LDE5LjItOC42TDQxMSwxODcuMWwyLjMtMi42DQoJYzEuNy0yLjUsMi43LTUuNSwyLjctOC43YzAtOC43LTcuNC0xNS44LTE2LjYtMTUuOHYwSDExMi42djBjLTkuMiwwLTE2LjYsNy4xLTE2LjYsMTUuOEM5NiwxNzkuMSw5Ny4xLDE4Mi4yLDk4LjksMTg0Ljd6Ii8+DQo8L3N2Zz4NCg==');
+}
+li.has-children > .thumb:after {
+  content: '';
+}
+li.has-children.expanded > .thumb:after {
+  content: '';
+}
+#subsites {
+	padding:0 0 15px 0;
+}
+#lang_form{
+	margin:15px 0;
+}
+#lang_form img{
+	padding:0 15px 0 0;
+	cursor:POINTER;
+}
+#dataTable_length select {
+	width:auto !important;
+}
+
+.firmaContainer{
+	background: none repeat scroll 0 0 #f0f0f0;
+    clear: both;
+    margin: 15px 10px 0px 0;
+    overflow: hidden;
+    padding: 15px;
+    width: 900px;
+}
+.firmaContainer .firma-info{
+	margin:0 0 10px 0;
+	float:left;
+	width:665px;
+}
+.firma-photo{
+	float:right;
+	width:200px;
+}
+.user_info_left{
+	float:left;
+	margin:15px 25px 0 0;
+	min-height:60px;
+}
+.user_logo_right{
+	float:right;
+	vertical-align:top;
+	margin:15px 50px 0 0;
+	min-height:60px;
+}
+.htooltip span{
+	display:block;
+	float:left;
+}
+.htooltip span img{
+	width:200px;
+	
+}
+.htooltip .logo{
+	float:right;
+	margin-top:20px;
+}
+.answer_div{
+	padding:30px 15px 15px;
+	text-align:center;
+}
+.answer_div textarea{
+	width:320px;
+	height:100px;
+	padding:10px;
+	border:1px solid #ccc;
+}
+.firma-div{
+	margin-top:15px;
+}
+.event_checks{
+	margin-right:10px;
+}
+tr.odd td.sorting_1, tr.odd td.sorting_2 {
+    background-color: #fff !important;
+}
+.users_table tr.even {
+    background-color: #fff;
+}
+.users_table .sorting_1 {
+	background-color:#fff !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #333 !important;
+    border: 1px solid #979797;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #dcdcdc));
+    background: -webkit-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: -moz-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: -o-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #333 !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+Inherited from div#dataTable_paginate.dataTables_paginate.paging_simple_numbers
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #333;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: 0.25em;
+}
+.dataTables_paginate {
+    float: right;
+    text-align: right;
+}
+Inherited from div#dataTable_wrapper.dataTables_wrapper.no-footer
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1;
+}
+div#permissions_div {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 20px;
+}
+#permissions_div fieldset {
+    border: 1px solid #ccc;
+}
+.status_box {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 10;
+    margin-left: 54px;
+}
+.status_holder {
+    /* position: relative; */
+    display: inline;
+}
+a.edit_lnk i {
+    font-size: 18px;
+}
+
+
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 120px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	text-align:center;
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}

@@ -1,0 +1,132 @@
+.multi-select-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.multi-select-menu {
+    position: absolute;
+    left: 0;
+    top: 41px;
+    z-index: 1;
+    float: left;
+    min-width: 100%;
+    background: #fff;
+    margin: 0;
+    border: 1px solid #e3001b;
+    display: none;
+}
+.multi-select-menu:focus,
+.multi-select-menu:active {
+    outline: 0 !important;
+}
+
+.multi-select-menuitem {
+    font-size: 16px;
+    font-family: 'Calibri';
+    color: #999587;
+    display: block;
+    padding: 15px 32px;
+    white-space: pre;
+}
+
+.multi-select-menuitem--titled:before {
+    display: block;
+    font-weight: bold;
+    content: attr(data-group-title);
+    margin: 0 0 0.25em -20px;
+}
+
+.multi-select-menuitem--titledsr:before {
+    display: block;
+    font-weight: bold;
+    content: attr(data-group-title);
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.multi-select-menuitem + .multi-select-menuitem {
+    padding-top: 0;
+}
+
+.multi-select-presets {
+    border-bottom: 1px solid #ddd;
+}
+
+.multi-select-menuitem input[type='checkbox'] {
+    position: absolute;
+    margin-top: 0.25em;
+    margin-left: -25px;
+    width: 20px;
+    height: 20px;
+    border-color: #e2001a;
+    border-radius: 2px;
+}
+.multi-select-menuitem input[type='checkbox']:checked {
+    background-color: #e2001a !important;
+}
+.multi-select-menuitem input[type='checkbox']:focus,
+.multi-select-menuitem input[type='checkbox']:active {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+.multi-select-button {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Calibri';
+    color: #999587;
+    padding: 8px 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: -0.5em;
+    background-color: #fff;
+    border: 1px solid #e3001b;
+    border-radius: 0;
+    cursor: default;
+}
+
+.multi-select-button:after {
+    content: url(/images/filter/pclosed.svg);
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    display: inline-block;
+}
+
+.multi-select-container--open .multi-select-menu {
+    display: block;
+}
+
+.multi-select-container--open .multi-select-button:after {
+    content: url(/images/filter/popened.svg);
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    display: inline-block;
+}
+
+.multi-select-container--positioned .multi-select-menu {
+    /* Avoid border/padding on menu messing with JavaScript width calculation */
+    box-sizing: border-box;
+}
+
+.multi-select-container--positioned .multi-select-menu label {
+    /* Allow labels to line wrap when menu is artificially narrowed */
+    white-space: normal;
+}
+.multi-select-button:active,
+.multi-select-button:focus {
+    border: 1px solid #e3001b !important;
+    outline: 0 !important;
+}
+

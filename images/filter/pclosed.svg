@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12" width="17" height="12">
+	<title>Chevron</title>
+	<style>
+		.s0 { opacity: .8;fill: none;stroke: #e2001a;stroke-width: 2 } 
+	</style>
+	<path id="Chevron" class="s0" d="m14 4l-5 5-5-5"/>
+</svg>

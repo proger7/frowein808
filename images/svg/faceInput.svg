@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 26" width="25" height="26">
+	<title>Vector</title>
+	<style>
+		.s0 { fill: #999587 } 
+	</style>
+	<path id="Vector" class="s0" d="m13 1c3.3 0 6 2.7 6 5.9 0 3.3-2.7 5.9-6 5.9-3.3 0-6-2.6-6-5.9 0-3.2 2.7-5.9 6-5.9zm-12 25v-1.3c0-5.1 4.2-9.2 9.3-9.2h5.4c5.1 0 9.3 4.1 9.3 9.2v1.3h-1.3z"/>
+</svg>

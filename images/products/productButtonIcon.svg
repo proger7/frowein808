@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 17" width="15" height="17">
+	<title>Vector</title>
+	<style>
+		.s0 { fill: #e2001a } 
+	</style>
+	<path id="Vector" class="s0" d="m15 16.4h-14v-4h2v2h10v-2h2zm-8-11.6l-4.3 4.3-1.4-1.4 6.7-6.7 6.7 6.7-1.4 1.4-4.3-4.3v7.6h-2z"/>
+</svg>
